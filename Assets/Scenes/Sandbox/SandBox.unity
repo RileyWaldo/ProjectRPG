@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: c7fb2735833bebc42a822a09813a289c,
     type: 2}
   m_UseShadowmask: 1
@@ -697,9 +698,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &312803005
 MeshRenderer:
@@ -715,6 +716,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1423,7 +1425,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809495954}
-  m_LocalRotation: {x: 0.0030866615, y: -0.99025923, z: 0.022243805, w: 0.13741335}
+  m_LocalRotation: {x: 0.003086659, y: -0.99025923, z: 0.022243777, w: 0.13741328}
   m_LocalPosition: {x: -41.6, y: 0.15, z: 6.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2920,7 +2922,7 @@ Terrain:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1560856416}
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 6
   m_TerrainData: {fileID: 15600000, guid: 9c58d8da5210c54489032ca1524dd751, type: 2}
   m_TreeDistance: 5000
   m_TreeBillboardDistance: 50
@@ -2943,6 +2945,7 @@ Terrain:
   m_ScaleInLightmap: 0.0256
   m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
   m_GroupingID: 0
+  m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
 --- !u!4 &1560856419
 Transform:
@@ -3503,7 +3506,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708979734}
-  m_LocalRotation: {x: 0.30468044, y: -0.1990499, z: 0.06527221, w: 0.92913324}
+  m_LocalRotation: {x: 0.3046804, y: -0.19904986, z: 0.06527219, w: 0.92913324}
   m_LocalPosition: {x: 22.21, y: 7.11, z: 12.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
