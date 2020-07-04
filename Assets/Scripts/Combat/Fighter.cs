@@ -67,9 +67,15 @@ namespace RPG.Combat
             }
         }
         //Animation Event
-        void Shoot()
+
+        void FootR()
         {
-            Hit();
+
+        }
+
+        void FootL()
+        {
+
         }
 
         private void TriggerAttack()

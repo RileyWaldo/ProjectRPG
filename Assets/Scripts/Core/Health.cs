@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
+using RPG.Stats;
 using RPG.Saving;
 
 namespace RPG.Core
@@ -9,6 +10,11 @@ namespace RPG.Core
         [SerializeField] float health = 100f;
 
         bool isDead = false;
+
+        private void Start()
+        {
+            health = GetComponent<BaseStats>().GetHealth();
+        }
 
         public bool IsDead()
         {
