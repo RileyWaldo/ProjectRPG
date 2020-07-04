@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using RPG.Movement;
+using RPG.Stats;
 using RPG.Core;
 
 namespace RPG.Combat
@@ -122,6 +123,11 @@ namespace RPG.Combat
                 return;
             currentWeapon = weapon;
             weapon.Spawn(rightHandTransform, leftHandTransform, animator);
+        }
+
+        public Health GetTarget()
+        {
+            return target;
         }
     }
 }

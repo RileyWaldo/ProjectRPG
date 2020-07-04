@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace RPG.Stats
 {
@@ -13,7 +11,7 @@ namespace RPG.Stats
 
         public float GetHealth()
         {
-            return 0f;
+            return progression.GetHealth(characterClass, startingLevel);
         }
     }
 }

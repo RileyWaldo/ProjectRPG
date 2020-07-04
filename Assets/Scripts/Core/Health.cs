@@ -1,19 +1,20 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
-using RPG.Stats;
+using RPG.Core;
 using RPG.Saving;
 
-namespace RPG.Core
+namespace RPG.Stats
 {
     public class Health : MonoBehaviour, ISaveable
     {
         [SerializeField] float health = 100f;
 
+        float maxHealth;
         bool isDead = false;
 
         private void Start()
         {
-            health = GetComponent<BaseStats>().GetHealth();
+            SetHealth(GetComponent<BaseStats>().GetHealth());
         }
 
         public bool IsDead()
@@ -23,23 +24,33 @@ namespace RPG.Core
 
         public void TakeDamage(float damage)
         {
-            if (health == 0)
-                return;
             health -= damage;
             if (health <= 0)
             {
-                Die();
+                health = 0;
+                if(!isDead)
+                    Die();
             }
+        }
+
+        public float GetPercentage()
+        {
+            return (health / maxHealth) * 100f;
         }
 
         private void Die()
         {
-            health = 0;
             isDead = true;
             GetComponent<Animator>().SetTrigger("Die");
             GetComponent<ActionScheduler>().CancelCurrentAction();
             GetComponent<NavMeshAgent>().enabled = false;
             GetComponent<CapsuleCollider>().enabled = false;
+        }
+
+        private void SetHealth(float value)
+        {
+            health = value;
+            maxHealth = value;
         }
 
         //saving functions
