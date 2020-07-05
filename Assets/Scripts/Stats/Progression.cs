@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections.Generic;
+using UnityEngine;
 
 namespace RPG.Stats
 {
@@ -7,31 +9,40 @@ namespace RPG.Stats
     {
         [SerializeField] ProgressionCharacterClass[] characterClasses = default;
 
+        Dictionary<CharacterClass, Dictionary<Stat, float[]>> lookUpTable;
+
         public float GetStat(Stat stat, CharacterClass characterClass, int level)
         {
+            BuildLookUp();
+
+            float[] levels = lookUpTable[characterClass][stat];
+
+            if(levels.Length < level)
+            {
+                Debug.Log("Trying to access that doesn't exsist. "+characterClass+" : "+stat);
+                return 0;
+            }
+
+            return levels[level - 1];
+        }
+
+        private void BuildLookUp()
+        {
+            if (lookUpTable != null) { return; }
+
+            lookUpTable = new Dictionary<CharacterClass, Dictionary<Stat, float[]>>();
+
             foreach(ProgressionCharacterClass progressionClass in characterClasses)
             {
-                if(progressionClass.characterClass == characterClass)
+                var statLookUpTable = new Dictionary<Stat, float[]>();
+
+                foreach(ProgressionStat progressionStat in progressionClass.stats)
                 {
-                    foreach(ProgressionStat progressionStat in progressionClass.stats)
-                    {
-                        if(progressionStat.stat == stat)
-                        {
-                            var length = progressionStat.levels.Length;
-                            var index = level - 1;
-                            if (index < length)
-                                return progressionStat.levels[index];
-                            else
-                            {
-                                Debug.Log("Trying to access stat that doesn't exist. " + progressionClass.characterClass +" : " + progressionStat.stat);
-                                return 0;
-                            }
-                        }
-                    }
+                    statLookUpTable[progressionStat.stat] = progressionStat.levels;
                 }
+
+                lookUpTable[progressionClass.characterClass] = statLookUpTable;
             }
-            Debug.Log("Trying to access stat that doesn't exist.");
-            return 0;
         }
 
         [System.Serializable]

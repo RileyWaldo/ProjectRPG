@@ -1,7 +1,6 @@
-﻿using UnityEngine;
-
-public enum Stat
+﻿public enum Stat
 {
     Health,
     XpReward,
+    XpToLevelUp
 }
