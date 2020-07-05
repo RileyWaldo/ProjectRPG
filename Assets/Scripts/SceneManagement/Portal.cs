@@ -9,8 +9,8 @@ namespace RPG.SceneManagement
     public class Portal : MonoBehaviour
     {
         [SerializeField] int sceneToLoad = 0;
-        [SerializeField] Transform spawnPoint;
-        [SerializeField] DestinationTag destinationTag;
+        [SerializeField] Transform spawnPoint = default;
+        [SerializeField] DestinationTag destinationTag = default;
 
         enum DestinationTag
         {

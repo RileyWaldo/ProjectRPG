@@ -14,7 +14,7 @@ namespace RPG.Stats
 
         private void Start()
         {
-            SetHealth(GetComponent<BaseStats>().GetHealth());
+            SetHealth(GetComponent<BaseStats>().GetStat(Stat.Health));
         }
 
         public bool IsDead()

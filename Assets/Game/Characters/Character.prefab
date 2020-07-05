@@ -11,13 +11,13 @@ GameObject:
   - component: {fileID: 3298265940001897803}
   - component: {fileID: 1331943151203516744}
   - component: {fileID: 5276116288126876009}
+  - component: {fileID: 9186614201431420150}
   - component: {fileID: 3474371734025527005}
   - component: {fileID: 82919771728183082}
-  - component: {fileID: 9186614201431420150}
+  - component: {fileID: 3485481513942764768}
   - component: {fileID: 8197661442229166559}
   - component: {fileID: 6481008828030816361}
   - component: {fileID: 4100985584344855305}
-  - component: {fileID: 3485481513942764768}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -80,6 +80,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &9186614201431420150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5592198893172740350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22b4b4c4e0580324c833c66b68126c1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &3474371734025527005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,7 +121,7 @@ MonoBehaviour:
   rightHandTransform: {fileID: 0}
   leftHandTransform: {fileID: 0}
   defaultWeapon: {fileID: 0}
---- !u!114 &9186614201431420150
+--- !u!114 &3485481513942764768
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -118,9 +130,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5592198893172740350}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22b4b4c4e0580324c833c66b68126c1f, type: 3}
+  m_Script: {fileID: 11500000, guid: de0d2daef5bdf514ca37a099d2738af1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startingLevel: 1
+  characterClass: 0
+  progression: {fileID: 11400000, guid: bc04fa805598dbd4b8ae6ff48f1dd1f0, type: 2}
 --- !u!114 &8197661442229166559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,18 +176,3 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &3485481513942764768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5592198893172740350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de0d2daef5bdf514ca37a099d2738af1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingLevel: 1
-  characterClass: 0
-  progression: {fileID: 11400000, guid: bc04fa805598dbd4b8ae6ff48f1dd1f0, type: 2}
