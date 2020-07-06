@@ -1,6 +1,10 @@
 ﻿public enum Stat
 {
     Health,
+    Mana,
     XpReward,
-    XpToLevelUp
+    XpToLevelUp,
+    Attack,
+    Defence,
+    Speed
 }

@@ -4390,6 +4390,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2626634294137543075, guid: 23759c5401f4bb143b566a355ddce685,
+        type: 3}
+      propertyPath: combatLevel
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3456466467281686774, guid: 23759c5401f4bb143b566a355ddce685,
         type: 3}
       propertyPath: m_LocalRotation.y
