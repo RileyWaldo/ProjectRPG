@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 namespace RPG.Stats
@@ -19,7 +18,7 @@ namespace RPG.Stats
 
             if(levels.Length < level)
             {
-                Debug.Log("Trying to access that doesn't exsist. "+characterClass+" : "+stat);
+                Debug.LogWarning("Trying to access that doesn't exsist. "+characterClass+" : "+stat);
                 return 0;
             }
 

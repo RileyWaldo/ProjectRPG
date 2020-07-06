@@ -11,6 +11,7 @@ namespace RPG.Combat
         [SerializeField] bool isHoming = false;
 
         Health target = null;
+        GameObject instigator = null;
         float damage = 0;
         float destroyTimer = 10f;
 
@@ -41,9 +42,10 @@ namespace RPG.Combat
                 Destroy(gameObject);
         }
 
-        public void SetTarget(Health target, float damage)
+        public void SetTarget(Health target, GameObject instigator, float damage)
         {
             this.target = target;
+            this.instigator = instigator;
             this.damage = damage;
         }
 
@@ -64,7 +66,7 @@ namespace RPG.Combat
             Health health = other.GetComponent<Health>();
             if(health == target)
             {
-                health.TakeDamage(damage);
+                health.TakeDamage(instigator, damage);
                 Destroy(gameObject);
             }
         }

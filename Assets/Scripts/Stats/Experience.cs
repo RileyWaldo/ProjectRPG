@@ -7,9 +7,21 @@ namespace RPG.Stats
     {
         [SerializeField] float experience = 0;
 
+        BaseStats baseStats;
+
+        private void Start()
+        {
+            baseStats = GetComponent<BaseStats>();
+        }
+
         public void GainXP(float xp)
         {
             experience += xp;
+            var xpToNextLevel = baseStats.GetStat(Stat.XpToLevelUp);
+            if(experience >= xpToNextLevel)
+            {
+                baseStats.LevelUp();
+            }
         }
 
         public float GetXP()
