@@ -21,16 +21,13 @@ namespace RPG.Combat
         public void Spawn(Transform rightHand, Transform leftHand, Animator animator)
         {
             DestroyOldWeapon(rightHand, leftHand);
-            if(equippedPrefab != null)
+            if (equippedPrefab != null)
             {
                 Transform handTransform = GetTransform(rightHand, leftHand);
                 GameObject weapon = Instantiate(equippedPrefab, handTransform);
                 weapon.name = weaponName;
             }
-            if (animatorOverride != null)
-            {
-                animator.runtimeAnimatorController = animatorOverride;
-            }
+            OverRideAnimator(animator);
         }
 
         private void DestroyOldWeapon(Transform rightHand, Transform leftHand)
@@ -54,6 +51,14 @@ namespace RPG.Combat
             else
                 handTransform = leftHand;
             return handTransform;
+        }
+
+        private void OverRideAnimator(Animator animator)
+        {
+            if (animatorOverride != null)
+            {
+                animator.runtimeAnimatorController = animatorOverride;
+            }
         }
 
         public bool HasProjectile()

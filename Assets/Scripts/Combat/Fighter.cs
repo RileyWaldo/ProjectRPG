@@ -19,9 +19,13 @@ namespace RPG.Combat
 
         Weapon currentWeapon = null;
 
-        private void Start()
+        private void Awake()
         {
             animator = GetComponent<Animator>();
+        }
+
+        private void Start()
+        {
             EquipWeapon(defaultWeapon);
         }
 
