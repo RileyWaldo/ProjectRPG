@@ -16,7 +16,7 @@ namespace RPG.Stats
 
             float[] levels = lookUpTable[characterClass][stat];
 
-            if(levels.Length < level)
+            if(levels.Length < level || !lookUpTable[characterClass].ContainsKey(stat))
             {
                 Debug.LogWarning("Trying to access that doesn't exsist. "+characterClass+" : "+stat);
                 return 0;
