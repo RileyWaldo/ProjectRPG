@@ -4,7 +4,9 @@ public enum CursorType
 {
     None,
     Movement,
-    Combat
+    Combat,
+    UI,
+    PickUp
 }
 
 namespace RPG.Control
