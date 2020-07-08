@@ -102,19 +102,19 @@ namespace RPG.Control
         {
             RaycastHit hitInfo;
             bool hasHit = Physics.Raycast(GetMouseRay(), out hitInfo);
-            target = hitInfo.point;
+            target = Vector3.zero;
 
             if (!hasHit)
                 return false;
 
             NavMeshHit navMeshHit;
-            if (!NavMesh.SamplePosition(target, out navMeshHit, maxNavMeshProjectionDistance, NavMesh.AllAreas))
+            if (!NavMesh.SamplePosition(hitInfo.point, out navMeshHit, maxNavMeshProjectionDistance, NavMesh.AllAreas))
                 return false;
 
             target = navMeshHit.position;
 
             NavMeshPath path = new NavMeshPath();
-            if (NavMesh.CalculatePath(transform.position, target, NavMesh.AllAreas, path))
+            if (!NavMesh.CalculatePath(transform.position, target, NavMesh.AllAreas, path))
                 return false;
             if (path.status != NavMeshPathStatus.PathComplete)
                 return false;
