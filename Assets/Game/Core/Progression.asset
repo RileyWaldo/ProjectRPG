@@ -36,9 +36,184 @@ MonoBehaviour:
       - 20
       - 35
       - 50
+    - stat: 3
+      levels:
+      - 10
+      - 15
+      - 20
+      - 35
+      - 50
+    - stat: 4
+      levels:
+      - 10
+      - 15
+      - 20
+      - 35
+      - 50
+    - stat: 5
+      levels:
+      - 10
+      - 15
+      - 20
+      - 35
+      - 50
+    - stat: 6
+      levels:
+      - 10
+      - 15
+      - 20
+      - 35
+      - 50
   - characterClass: 1
-    stats: []
+    stats:
+    - stat: 0
+      levels:
+      - 20
+      - 50
+      - 70
+      - 100
+      - 150
+    - stat: 1
+      levels:
+      - 20
+      - 50
+      - 70
+      - 100
+      - 150
+    - stat: 2
+      levels:
+      - 20
+      - 50
+      - 70
+      - 100
+      - 150
+    - stat: 3
+      levels:
+      - 20
+      - 50
+      - 70
+      - 100
+      - 150
+    - stat: 4
+      levels:
+      - 20
+      - 50
+      - 70
+      - 100
+      - 150
+    - stat: 5
+      levels:
+      - 20
+      - 50
+      - 70
+      - 100
+      - 150
+    - stat: 6
+      levels:
+      - 20
+      - 50
+      - 70
+      - 100
+      - 150
   - characterClass: 2
-    stats: []
+    stats:
+    - stat: 0
+      levels:
+      - 20
+      - 50
+      - 70
+      - 100
+      - 150
+    - stat: 1
+      levels:
+      - 20
+      - 50
+      - 70
+      - 100
+      - 150
+    - stat: 2
+      levels:
+      - 20
+      - 50
+      - 70
+      - 100
+      - 150
+    - stat: 3
+      levels:
+      - 20
+      - 50
+      - 70
+      - 100
+      - 150
+    - stat: 4
+      levels:
+      - 20
+      - 50
+      - 70
+      - 100
+      - 150
+    - stat: 5
+      levels:
+      - 20
+      - 50
+      - 70
+      - 100
+      - 150
+    - stat: 6
+      levels:
+      - 20
+      - 50
+      - 70
+      - 100
+      - 150
   - characterClass: 3
-    stats: []
+    stats:
+    - stat: 0
+      levels:
+      - 20
+      - 50
+      - 70
+      - 100
+      - 150
+    - stat: 1
+      levels:
+      - 20
+      - 50
+      - 70
+      - 100
+      - 150
+    - stat: 2
+      levels:
+      - 20
+      - 50
+      - 70
+      - 100
+      - 150
+    - stat: 3
+      levels:
+      - 20
+      - 50
+      - 70
+      - 100
+      - 150
+    - stat: 4
+      levels:
+      - 20
+      - 50
+      - 70
+      - 100
+      - 150
+    - stat: 5
+      levels:
+      - 20
+      - 50
+      - 70
+      - 100
+      - 150
+    - stat: 6
+      levels:
+      - 20
+      - 50
+      - 70
+      - 100
+      - 150

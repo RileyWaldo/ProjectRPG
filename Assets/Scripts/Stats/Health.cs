@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 using RPG.Core;
 using RPG.Saving;
 using System;
@@ -8,6 +9,12 @@ namespace RPG.Stats
 {
     public class Health : MonoBehaviour, ISaveable
     {
+        [SerializeField] TakeDamageEvent takeDamage = default;
+        [System.Serializable]
+        public class TakeDamageEvent : UnityEvent<float>
+        { 
+        }
+
         float health = -1f;
         float maxHealth;
         bool isDead = false;
@@ -36,6 +43,10 @@ namespace RPG.Stats
                     GainXP(instigator);
                     Die();
                 }
+            }
+            else
+            {
+                takeDamage.Invoke(damage);
             }
         }
 
