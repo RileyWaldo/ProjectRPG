@@ -2,6 +2,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.AI;
+using RPG.Core;
+using RPG.Control;
 
 namespace RPG.SceneManagement
 {
@@ -10,6 +12,7 @@ namespace RPG.SceneManagement
         [SerializeField] int sceneToLoad = 0;
         [SerializeField] Transform spawnPoint = default;
         [SerializeField] DestinationTag destinationTag = default;
+        [SerializeField] float fadeWaitTime = 0.5f;
 
         enum DestinationTag
         {
@@ -30,11 +33,15 @@ namespace RPG.SceneManagement
             Fader fader = FindObjectOfType<Fader>();
             SaveWrapper saveWrapper = FindObjectOfType<SaveWrapper>();
 
+            DisableControl();
+
             yield return fader.FadeOut();
 
             saveWrapper.Save();
 
             yield return SceneManager.LoadSceneAsync(sceneToLoad);
+
+            DisableControl();
 
             saveWrapper.Load();
 
@@ -43,7 +50,9 @@ namespace RPG.SceneManagement
 
             saveWrapper.Save();
 
-            yield return fader.FadeIn();
+            yield return new WaitForSeconds(fadeWaitTime);
+            fader.FadeIn();
+            EnableControl();
             Destroy(gameObject);
         }
 
@@ -67,6 +76,19 @@ namespace RPG.SceneManagement
             GameObject player = GameObject.FindWithTag("Player");
             player.GetComponent<NavMeshAgent>().Warp(otherPortal.spawnPoint.position);
             player.transform.rotation = otherPortal.spawnPoint.rotation;
+        }
+
+        private void DisableControl()
+        {
+            GameObject player = GameObject.FindWithTag("Player");
+            player.GetComponent<ActionScheduler>().CancelCurrentAction();
+            player.GetComponent<PlayerController>().enabled = false;
+        }
+
+        private void EnableControl()
+        {
+            GameObject player = GameObject.FindWithTag("Player");
+            player.GetComponent<PlayerController>().enabled = true;
         }
     }
 }

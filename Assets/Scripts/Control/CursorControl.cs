@@ -21,6 +21,13 @@ namespace RPG.Control
             public CursorType type;
             public Texture2D texture;
             public Vector2 hotSpot;
+
+            public CursorMapping(CursorType type, Texture2D texture, Vector2 hotSpot)
+            {
+                this.type = type;
+                this.texture = texture;
+                this.hotSpot = hotSpot;
+            }
         }
 
         public void SetCursor(CursorType type)

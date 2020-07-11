@@ -1,41 +1,53 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace RPG.SceneManagement
 {
     public class Fader : MonoBehaviour
     {
-        [SerializeField] float fadeTime = 2f;
+        [SerializeField] float fadeOutTime = 0.5f;
+        [SerializeField] float fadeInTime = 0.5f;
 
         CanvasGroup canvas;
+        Coroutine currentActiveFade = null;
 
         private void Awake()
         {
             canvas = GetComponent<CanvasGroup>();
         }
 
-        public IEnumerator FadeOut()
+        public Coroutine FadeOut()
         {
-            while(canvas.alpha < 1f)
-            {
-                canvas.alpha += Time.deltaTime / fadeTime;
-                yield return null;
-            }
+            return Fade(1, fadeOutTime);
         }
 
-        public IEnumerator FadeIn()
+        public Coroutine FadeIn()
         {
-            while (canvas.alpha > 0)
-            {
-                canvas.alpha -= Time.deltaTime / fadeTime;
-                yield return null;
-            }
+            return Fade(0, fadeInTime);
         }
 
-        public void FadeOutNow()
+        public Coroutine Fade(float target, float time)
+        {
+            if (currentActiveFade != null)
+            {
+                StopCoroutine(currentActiveFade);
+            }
+            currentActiveFade = StartCoroutine(FadeRoutine(target, time));
+            return currentActiveFade;
+        }
+
+        public void FadeOutImmediate()
         {
             canvas.alpha = 1f;
+        }
+
+        private IEnumerator FadeRoutine(float target, float time)
+        {
+            while (!Mathf.Approximately(canvas.alpha, target))
+            {
+                canvas.alpha = Mathf.MoveTowards(canvas.alpha, target, Time.deltaTime / time);
+                yield return null;
+            }
         }
     }
 }
