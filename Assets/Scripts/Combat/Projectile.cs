@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using RPG.Stats;
 
 namespace RPG.Combat
@@ -7,6 +8,7 @@ namespace RPG.Combat
     {
         [SerializeField] float speed = 4f;
         [SerializeField] bool isHoming = false;
+        [SerializeField] UnityEvent onHit = default;
 
         Health target = null;
         GameObject instigator = null;
@@ -65,6 +67,7 @@ namespace RPG.Combat
             if(health == target)
             {
                 health.TakeDamage(instigator, damage);
+                onHit.Invoke();
                 Destroy(gameObject);
             }
         }

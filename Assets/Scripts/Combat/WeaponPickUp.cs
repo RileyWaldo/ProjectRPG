@@ -5,7 +5,7 @@ namespace RPG.Combat
 {
     public class WeaponPickUp : MonoBehaviour, IRaycastable
     {
-        [SerializeField] Weapon weapon = null;
+        [SerializeField] WeaponConfig weapon = null;
 
         private void PickUp(Fighter fighter)
         {

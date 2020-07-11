@@ -10,6 +10,8 @@ namespace RPG.Stats
     public class Health : MonoBehaviour, ISaveable
     {
         [SerializeField] TakeDamageEvent takeDamage = default;
+        [SerializeField] UnityEvent onDie = default;
+
         [System.Serializable]
         public class TakeDamageEvent : UnityEvent<float>
         { 
@@ -41,6 +43,7 @@ namespace RPG.Stats
                 health = 0;
                 if(!isDead)
                 {
+                    onDie.Invoke();
                     GainXP(instigator);
                     Die();
                 }

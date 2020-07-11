@@ -11,13 +11,13 @@ namespace RPG.Combat
         [SerializeField] float timeBetweenAttacks = 1f;
         [SerializeField] Transform rightHandTransform = null;
         [SerializeField] Transform leftHandTransform = null;
-        [SerializeField] Weapon defaultWeapon = null;
+        [SerializeField] WeaponConfig defaultWeapon = null;
 
         Health target;
         Animator animator;
         float timeSinceLastAttack = Mathf.Infinity;
 
-        Weapon currentWeapon = null;
+        WeaponConfig currentWeaponConfig = null;
 
         private void Awake()
         {
@@ -63,9 +63,9 @@ namespace RPG.Combat
             if (target != null)
             {
                 float damage = GetComponent<BaseStats>().GetStat(Stat.Attack);
-                if(currentWeapon.HasProjectile())
+                if(currentWeaponConfig.HasProjectile())
                 {
-                    currentWeapon.LaunchProjectile(rightHandTransform, leftHandTransform, target, gameObject, damage);
+                    currentWeaponConfig.LaunchProjectile(rightHandTransform, leftHandTransform, target, gameObject, damage);
                 }
                 else
                 {
@@ -101,7 +101,7 @@ namespace RPG.Combat
 
         private bool IsInRange()
         {
-            return Vector3.Distance(transform.position, target.transform.position) <= currentWeapon.GetRange();
+            return Vector3.Distance(transform.position, target.transform.position) <= currentWeaponConfig.GetRange();
         }
 
         public void Attack(GameObject combatTarget)
@@ -127,7 +127,7 @@ namespace RPG.Combat
         {
             if(stat == Stat.Attack)
             {
-                yield return currentWeapon.GetDamage();
+                yield return currentWeaponConfig.GetDamage();
             }
         }
 
@@ -135,15 +135,15 @@ namespace RPG.Combat
         {
             if(stat == Stat.Attack)
             {
-                yield return currentWeapon.GetPercentageBonus();
+                yield return currentWeaponConfig.GetPercentageBonus();
             }
         }
 
-        public void EquipWeapon(Weapon weapon)
+        public void EquipWeapon(WeaponConfig weapon)
         {
             if (weapon == null)
                 return;
-            currentWeapon = weapon;
+            currentWeaponConfig = weapon;
             weapon.Spawn(rightHandTransform, leftHandTransform, animator);
         }
 
