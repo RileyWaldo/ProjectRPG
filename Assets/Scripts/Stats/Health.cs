@@ -25,6 +25,7 @@ namespace RPG.Stats
             {
                 SetHealth(GetComponent<BaseStats>().GetStat(Stat.Health));
             }
+            maxHealth = health;
         }
 
         public bool IsDead()
@@ -50,9 +51,9 @@ namespace RPG.Stats
             }
         }
 
-        public float GetPercentage()
+        public float GetFraction()
         {
-            return (health / maxHealth) * 100f;
+            return health / maxHealth;
         }
 
         private void Die()

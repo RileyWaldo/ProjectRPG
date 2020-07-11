@@ -18,7 +18,7 @@ namespace RPG.UI
 
         private void Update()
         {
-            healthText.text = String.Format("Health: {0:0}%", health.GetPercentage().ToString());
+            healthText.text = String.Format("Health: {0:0}%", (health.GetFraction() * 100f).ToString());
         }
     }
 }

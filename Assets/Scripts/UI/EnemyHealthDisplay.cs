@@ -26,7 +26,7 @@ namespace RPG.UI
             }
             else
             {
-                enemyHealthText.text = String.Format("Enemy: {0:0}%", target.GetPercentage());
+                enemyHealthText.text = String.Format("Enemy: {0:0}%", target.GetFraction());
             }
         }
     }
