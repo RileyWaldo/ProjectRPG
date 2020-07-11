@@ -18,6 +18,7 @@ namespace RPG.Combat
         float timeSinceLastAttack = Mathf.Infinity;
 
         WeaponConfig currentWeaponConfig = null;
+        Weapon currentWeapon = null;
 
         private void Awake()
         {

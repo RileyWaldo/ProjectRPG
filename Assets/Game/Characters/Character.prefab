@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3718097132294457963}
   - component: {fileID: 478533613299282312}
+  - component: {fileID: 3870759654758698153}
   m_Layer: 0
   m_Name: Die
   m_TagString: Untagged
@@ -127,6 +128,35 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3870759654758698153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954258712979940601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a6563b7480deb9479dd45d625a37ea4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClips:
+  - {fileID: 8300000, guid: 89573aa738330a14294c480684040bc1, type: 3}
+  - {fileID: 8300000, guid: a79a3ce3f49393e439ab2890fb53115b, type: 3}
+  - {fileID: 8300000, guid: bfc97a0fac6a6414c85c0b65cacef051, type: 3}
+  - {fileID: 8300000, guid: e6254d1c51826554dbc6ae2691db3862, type: 3}
+  - {fileID: 8300000, guid: 96f222e5c49f7174f8d19f4ce09ed0ec, type: 3}
+  - {fileID: 8300000, guid: 3845c6d3e43e56a43a39352b5abaf531, type: 3}
+  - {fileID: 8300000, guid: 06f3207680add8a42b756669149663d2, type: 3}
+  - {fileID: 8300000, guid: 0a3ca4f9a66e14d4cb1f9d47d9270175, type: 3}
+  - {fileID: 8300000, guid: 6927f9b2ffc324847a9e1382594d931a, type: 3}
+  - {fileID: 8300000, guid: eef8560ee55b1a544b202a039ec46e40, type: 3}
+  - {fileID: 8300000, guid: bc11b938de37f774ca7dae095e769329, type: 3}
+  - {fileID: 8300000, guid: 5a21d439d0824ae4a8e67a89acf40f2a, type: 3}
+  - {fileID: 8300000, guid: 34d8982e9529c6140a198b71e87a0a9a, type: 3}
+  - {fileID: 8300000, guid: 4685e944b863fd84d85a265243475c1b, type: 3}
+  - {fileID: 8300000, guid: 53641c40c739cdc45853878d671bcf5f, type: 3}
+  - {fileID: 8300000, guid: a2adadfc8632caa4d8b26a3164d51ac1, type: 3}
 --- !u!1 &1342030089856632060
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,6 +167,7 @@ GameObject:
   m_Component:
   - component: {fileID: 771614467439407412}
   - component: {fileID: 3773281947508265270}
+  - component: {fileID: 2541279310413184864}
   m_Layer: 0
   m_Name: TakeDamage
   m_TagString: Untagged
@@ -254,6 +285,40 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2541279310413184864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342030089856632060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a6563b7480deb9479dd45d625a37ea4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClips:
+  - {fileID: 8300000, guid: 88212d15603516247816dbce7db48707, type: 3}
+  - {fileID: 8300000, guid: 314565da14e79a540a03bc8f3eceec9b, type: 3}
+  - {fileID: 8300000, guid: e0a42b146b3035143a5c69896459406e, type: 3}
+  - {fileID: 8300000, guid: 8462428142dfaf844aaab583fe9e7189, type: 3}
+  - {fileID: 8300000, guid: 42b292ee4a16dcc47a42f63adcb87d3a, type: 3}
+  - {fileID: 8300000, guid: 8bf7b6291eff6a140acffd0d2161511a, type: 3}
+  - {fileID: 8300000, guid: 71a032f8e975bd54192970ecff58f236, type: 3}
+  - {fileID: 8300000, guid: 62a14edcc8d9f7543b83d8e744ee0cc4, type: 3}
+  - {fileID: 8300000, guid: 587dabf4670b06d42bc71740d5534228, type: 3}
+  - {fileID: 8300000, guid: 0a6b1bf00335ce04494bc1a54b7e45ff, type: 3}
+  - {fileID: 8300000, guid: 8d0131e903b14c345ba098e118a01da3, type: 3}
+  - {fileID: 8300000, guid: 99b810d43b0c4024d942e0d2f126ecfa, type: 3}
+  - {fileID: 8300000, guid: d56e7f6621b83d346afed7665f40b461, type: 3}
+  - {fileID: 8300000, guid: 7f94375ff562b0b4c8c5820bbe5bbf63, type: 3}
+  - {fileID: 8300000, guid: 9f61c29f0fd53754983eac1f7c5f8748, type: 3}
+  - {fileID: 8300000, guid: cc195ae8eb20e0342b6e9ec27ca339e9, type: 3}
+  - {fileID: 8300000, guid: 216fef9c835b3a54588e47a185199dcd, type: 3}
+  - {fileID: 8300000, guid: 812f83c53df59654bbaf39e06a3562bc, type: 3}
+  - {fileID: 8300000, guid: 718548add8f8e2d47ab01fb4b4687ab8, type: 3}
+  - {fileID: 8300000, guid: 31a58d94b8d67744294296d8fe563753, type: 3}
+  - {fileID: 8300000, guid: 78ba881eba0e3234c97fc1d2af7cc757, type: 3}
 --- !u!1 &2200880940795286028
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,8 +517,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3773281947508265270}
-        m_MethodName: Play
+      - m_Target: {fileID: 2541279310413184864}
+        m_MethodName: PlayRandomClip
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -466,8 +531,8 @@ MonoBehaviour:
   onDie:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 478533613299282312}
-        m_MethodName: Play
+      - m_Target: {fileID: 3870759654758698153}
+        m_MethodName: PlayRandomClip
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
