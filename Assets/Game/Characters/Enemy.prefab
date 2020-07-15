@@ -30,6 +30,7 @@ MonoBehaviour:
   wayPointTollerance: 1
   dwellTime: 1
   patrolSpeedFraction: 0.5
+  aggroTime: 4
 --- !u!1001 &2090392443282786749
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -131,13 +132,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197661442229166559, guid: 1495c0e2eb60f694badda7100b0f243f,
         type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8197661442229166559, guid: 1495c0e2eb60f694badda7100b0f243f,
+        type: 3}
       propertyPath: health
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8197661442229166559, guid: 1495c0e2eb60f694badda7100b0f243f,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8197661442229166559, guid: 1495c0e2eb60f694badda7100b0f243f,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8197661442229166559, guid: 1495c0e2eb60f694badda7100b0f243f,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 6555837398796641402}
+    - target: {fileID: 8197661442229166559, guid: 1495c0e2eb60f694badda7100b0f243f,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: Aggrevate
+      objectReference: {fileID: 0}
+    - target: {fileID: 8197661442229166559, guid: 1495c0e2eb60f694badda7100b0f243f,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8290969356655161359, guid: 1495c0e2eb60f694badda7100b0f243f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9046582143712165202, guid: 1495c0e2eb60f694badda7100b0f243f, type: 3}

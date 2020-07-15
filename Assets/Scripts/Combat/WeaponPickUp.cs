@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using RPG.Control;
+using RPG.Movement;
 
 namespace RPG.Combat
 {
@@ -17,7 +18,7 @@ namespace RPG.Combat
         {
             if(other.tag == "Player")
             {
-                PickUp(GetComponent<Fighter>());
+                PickUp(other.GetComponent<Fighter>());
             }
         }
 
@@ -25,7 +26,10 @@ namespace RPG.Combat
         {
             if(Input.GetMouseButtonDown(0))
             {
-                PickUp(callingController.GetComponent<Fighter>());
+                if(callingController.GetComponent<Mover>().CanMoveTo(transform.position))
+                {
+                    callingController.GetComponent<Mover>().StartMoveAction(transform.position, 1f);
+                }
             }
             return true;
         }
