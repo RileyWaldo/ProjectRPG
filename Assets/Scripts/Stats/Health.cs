@@ -3,7 +3,7 @@ using UnityEngine.AI;
 using UnityEngine.Events;
 using RPG.Core;
 using RPG.Saving;
-using System;
+using GameDevTV.Utils;
 
 namespace RPG.Stats
 {
@@ -17,17 +17,24 @@ namespace RPG.Stats
         { 
         }
 
-        float health = -1f;
+        LazyValue<float> health;
         float maxHealth;
         bool isDead = false;
 
+        private void Awake()
+        {
+            health = new LazyValue<float>(GetInitialHealth);
+        }
+
+        private float GetInitialHealth()
+        {
+            return GetComponent<BaseStats>().GetStat(Stat.Health);
+        }
+
         private void Start()
         {
-            if(health < 0)
-            {
-                SetHealth(GetComponent<BaseStats>().GetStat(Stat.Health));
-            }
-            maxHealth = health;
+            health.ForceInit();
+            maxHealth = health.value;
         }
 
         public bool IsDead()
@@ -37,10 +44,10 @@ namespace RPG.Stats
 
         public void TakeDamage(GameObject instigator, float damage)
         {
-            health -= damage;
-            if (health <= 0)
+            health.value -= damage;
+            if (health.value <= 0)
             {
-                health = 0;
+                health.value = 0;
                 if(!isDead)
                 {
                     onDie.Invoke();
@@ -56,7 +63,7 @@ namespace RPG.Stats
 
         public float GetFraction()
         {
-            return health / maxHealth;
+            return health.value / maxHealth;
         }
 
         private void Die()
@@ -85,20 +92,20 @@ namespace RPG.Stats
 
         public void SetHealth(float value)
         {
-            health = value;
+            health.value = value;
             maxHealth = value;
         }
 
         //saving functions
         public object CaptureState()
         {
-            return health;
+            return health.value;
         }
 
         public void RestoreState(object state)
         {
-            health = (float)state;
-            if(health <= 0)
+            health.value = (float)state;
+            if(health.value <= 0)
             {
                 Die();
             }
