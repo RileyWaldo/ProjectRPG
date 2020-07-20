@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace RPG.Combat
 {
-    [CreateAssetMenu(fileName = "Weapon", menuName = "RPG/Make New Weapon", order = 0)]
+    [CreateAssetMenu(fileName = "Weapon", menuName = "RPG/Create New Weapon", order = 0)]
     public class WeaponConfig : ScriptableObject
     {
         [Header ("GameObjects")]
