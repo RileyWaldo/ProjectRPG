@@ -1,0 +1,353 @@
+fileFormatVersion: 2
+guid: f237f09670f762c4395c02d8c3a5ee38
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Dorsil1
+    100002: Dorsil2
+    100004: Dorsil2_end
+    100006: Fin1.L
+    100008: Fin1.R
+    100010: Fin2.L
+    100012: Fin2.R
+    100014: Fin3.L
+    100016: Fin3.L_end
+    100018: Fin3.R
+    100020: Fin3.R_end
+    100022: Fins
+    100024: Head1
+    100026: Head2
+    100028: Head2_end
+    100030: Jaw1
+    100032: Jaw2
+    100034: Jaw2_end
+    100036: //RootNode
+    100038: Largemouth
+    100040: Largemouth Skeleton
+    100042: RearBottomFin1
+    100044: RearBottomFin2
+    100046: RearBottomFin2_end
+    100048: RearTopFin1
+    100050: RearTopFin2
+    100052: RearTopFin2_end
+    100054: SideFin1.L
+    100056: SideFin1.R
+    100058: SideFin2.L
+    100060: SideFin2.R
+    100062: SideFin3.L
+    100064: SideFin3.L_end
+    100066: SideFin3.R
+    100068: SideFin3.R_end
+    100070: Spine1
+    100072: Spine2
+    100074: Tail1
+    100076: Tail2
+    100078: Tail3
+    100080: Tail3_end
+    400000: Dorsil1
+    400002: Dorsil2
+    400004: Dorsil2_end
+    400006: Fin1.L
+    400008: Fin1.R
+    400010: Fin2.L
+    400012: Fin2.R
+    400014: Fin3.L
+    400016: Fin3.L_end
+    400018: Fin3.R
+    400020: Fin3.R_end
+    400022: Fins
+    400024: Head1
+    400026: Head2
+    400028: Head2_end
+    400030: Jaw1
+    400032: Jaw2
+    400034: Jaw2_end
+    400036: Largemouth
+    400038: //RootNode
+    400040: Largemouth Skeleton
+    400042: RearBottomFin1
+    400044: RearBottomFin2
+    400046: RearBottomFin2_end
+    400048: RearTopFin1
+    400050: RearTopFin2
+    400052: RearTopFin2_end
+    400054: SideFin1.L
+    400056: SideFin1.R
+    400058: SideFin2.L
+    400060: SideFin2.R
+    400062: SideFin3.L
+    400064: SideFin3.L_end
+    400066: SideFin3.R
+    400068: SideFin3.R_end
+    400070: Spine1
+    400072: Spine2
+    400074: Tail1
+    400076: Tail2
+    400078: Tail3
+    400080: Tail3_end
+    2100000: Largemouth Skin 1
+    2100002: Largemouth Skin 4
+    2100004: Largemouth Skin 2
+    2100006: Largemouth Skin 3
+    2100008: Largemouth Eyes
+    2100010: Largemouth Mouth
+    4300000: Largemouth
+    7400000: Idle
+    7400002: Swim
+    7400004: Eat
+    7400006: Death
+    7400008: Death Loop
+    9500000: //RootNode
+    13700000: Largemouth
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Largemouth Eyes
+    second: {fileID: 2100000, guid: 67814f01301eb0d40aa93af65baee86e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Largemouth Mouth
+    second: {fileID: 2100000, guid: 1dbeb302ca8a7a04aa0eddcd3778434e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Largemouth Skin 1
+    second: {fileID: 2100000, guid: efc4e115593ae6143be9aa0bd6d15f9b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Largemouth Skin 2
+    second: {fileID: 2100000, guid: 264660fb4812b61468aa0efb77fbbf35, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Largemouth Skin 3
+    second: {fileID: 2100000, guid: 63c7ac7ef26e03247b54358108219f1f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Largemouth Skin 4
+    second: {fileID: 2100000, guid: c0f42f35e11f31645bb5d17328d01628, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Idle
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Swim
+      takeName: Swim
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Eat
+      takeName: Eat
+      firstFrame: 0
+      lastFrame: 35
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Death
+      takeName: Death
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Death Loop
+      takeName: Death Loop
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,181 @@
+fileFormatVersion: 2
+guid: 613b0477df03e5c4aac6d7432baff919
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Fin1.L
+    100002: Fin1.R
+    100004: Fin2.L
+    100006: Fin2.R
+    100008: Fin3.L
+    100010: Fin3.L_end
+    100012: Fin3.R
+    100014: Fin3.R_end
+    100016: Fins
+    100018: Head1
+    100020: Head2
+    100022: Head2_end
+    100024: Neck
+    100026: RearBottomFin1
+    100028: RearBottomFin2
+    100030: RearBottomFin2_end
+    100032: RearTopFin1
+    100034: RearTopFin2
+    100036: RearTopFin2_end
+    100038: Spine1
+    100040: Spine2
+    100042: //RootNode
+    100044: Sturgeon
+    100046: Sturgeon  Skeleton
+    100048: Tail1
+    100050: Tail2
+    100052: Tail3
+    100054: Tail3_end
+    400000: Fin1.L
+    400002: Fin1.R
+    400004: Fin2.L
+    400006: Fin2.R
+    400008: Fin3.L
+    400010: Fin3.L_end
+    400012: Fin3.R
+    400014: Fin3.R_end
+    400016: Fins
+    400018: Head1
+    400020: Head2
+    400022: Head2_end
+    400024: Neck
+    400026: RearBottomFin1
+    400028: RearBottomFin2
+    400030: RearBottomFin2_end
+    400032: RearTopFin1
+    400034: RearTopFin2
+    400036: RearTopFin2_end
+    400038: Spine1
+    400040: Spine2
+    400042: Sturgeon
+    400044: //RootNode
+    400046: Sturgeon  Skeleton
+    400048: Tail1
+    400050: Tail2
+    400052: Tail3
+    400054: Tail3_end
+    2100000: Sturgeon Skin 2
+    2100002: Sturgeon Skin 1
+    2100004: Sturgeon Skin 3
+    2100006: Sturgeon Eyes
+    2100008: SturgeonMouth
+    4300000: Sturgeon
+    7400000: Idle
+    7400002: Swim
+    7400004: Eat
+    7400006: Death
+    7400008: Death Loop
+    9500000: //RootNode
+    13700000: Sturgeon
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sturgeon Eyes
+    second: {fileID: 2100000, guid: 4e8a2768d17ce594fac4addc219ef136, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sturgeon Skin 1
+    second: {fileID: 2100000, guid: c528b69b2a024f04cba2a84c4d9f0f8e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sturgeon Skin 2
+    second: {fileID: 2100000, guid: 8322cce700b424b4eb2cbc43df247abb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sturgeon Skin 3
+    second: {fileID: 2100000, guid: 28365d6165644ed489e84623fc2b4e84, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SturgeonMouth
+    second: {fileID: 2100000, guid: 619a06ea89d66ac46999d5f09dd36363, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,213 @@
+fileFormatVersion: 2
+guid: 8c6514a68f9a8f1498d040faf29fdba3
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Fin1.L
+    100002: Fin1.R
+    100004: Fin2.L
+    100006: Fin2.R
+    100008: Fin3.L
+    100010: Fin3.R
+    100012: Fin4.L
+    100014: Fin4.L_end
+    100016: Fin4.R
+    100018: Fin4.R_end
+    100020: Fins
+    100022: Head1
+    100024: Head2
+    100026: Head2_end
+    100028: Jaw1
+    100030: Jaw2
+    100032: Jaw2_end
+    100034: MiddleFin1.L
+    100036: MiddleFin1.R
+    100038: MiddleFin2.L
+    100040: MiddleFin2.R
+    100042: MiddleFin3.L
+    100044: MiddleFin3.L_end
+    100046: MiddleFin3.R
+    100048: MiddleFin3.R_end
+    100050: Neck
+    100052: //RootNode
+    100054: Pike
+    100056: Pike Skeleton
+    100058: RearBottomFin1
+    100060: RearBottomFin2
+    100062: RearBottomFin2_end
+    100064: RearTopFin1
+    100066: RearTopFin2
+    100068: RearTopFin2_end
+    100070: Spine1
+    100072: Spine2
+    100074: Tail1
+    100076: Tail2
+    100078: Tail3
+    100080: Tail3_end
+    400000: Fin1.L
+    400002: Fin1.R
+    400004: Fin2.L
+    400006: Fin2.R
+    400008: Fin3.L
+    400010: Fin3.R
+    400012: Fin4.L
+    400014: Fin4.L_end
+    400016: Fin4.R
+    400018: Fin4.R_end
+    400020: Fins
+    400022: Head1
+    400024: Head2
+    400026: Head2_end
+    400028: Jaw1
+    400030: Jaw2
+    400032: Jaw2_end
+    400034: MiddleFin1.L
+    400036: MiddleFin1.R
+    400038: MiddleFin2.L
+    400040: MiddleFin2.R
+    400042: MiddleFin3.L
+    400044: MiddleFin3.L_end
+    400046: MiddleFin3.R
+    400048: MiddleFin3.R_end
+    400050: Neck
+    400052: Pike
+    400054: //RootNode
+    400056: Pike Skeleton
+    400058: RearBottomFin1
+    400060: RearBottomFin2
+    400062: RearBottomFin2_end
+    400064: RearTopFin1
+    400066: RearTopFin2
+    400068: RearTopFin2_end
+    400070: Spine1
+    400072: Spine2
+    400074: Tail1
+    400076: Tail2
+    400078: Tail3
+    400080: Tail3_end
+    2100000: Pike Skin 1
+    2100002: Pike Skin 3
+    2100004: Pike Skin 4
+    2100006: Pike Skin 2
+    2100008: Pike Eyes
+    2100010: Pike Mouth
+    4300000: Pike
+    7400000: Idle
+    7400002: Swim
+    7400004: Eat
+    7400006: Death
+    7400008: Death Loop
+    9500000: //RootNode
+    13700000: Pike
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pike Eyes
+    second: {fileID: 2100000, guid: 9906584e5531d9740a4ce75447241c23, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pike Mouth
+    second: {fileID: 2100000, guid: 54d57bb713263914f9f532227e34aaac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pike Skin 1
+    second: {fileID: 2100000, guid: e2d4d3aebe3432148952aa12be70f9cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pike Skin 2
+    second: {fileID: 2100000, guid: c7259505e7a82d64ea4063bb473f306a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pike Skin 3
+    second: {fileID: 2100000, guid: 52789d3b7f8b26f43beeb590161b7769, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pike Skin 4
+    second: {fileID: 2100000, guid: 5ae3057675f1cb34d9784904617bcdd2, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

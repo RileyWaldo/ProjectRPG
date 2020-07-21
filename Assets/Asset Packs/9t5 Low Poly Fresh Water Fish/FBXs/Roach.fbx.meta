@@ -1,0 +1,197 @@
+fileFormatVersion: 2
+guid: e65ade6cc2a9e414aacfe38001dd3240
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: DorsalFin1
+    100002: DorsalFin2
+    100004: DorsalFin2_end
+    100006: Fin1.L
+    100008: Fin1.R
+    100010: Fin2.L
+    100012: Fin2.R
+    100014: Fin3.L
+    100016: Fin3.L_end
+    100018: Fin3.R
+    100020: Fin3.R_end
+    100022: Head1
+    100024: Head2
+    100026: Head2_end
+    100028: Jaw1
+    100030: Jaw2
+    100032: Jaw2_end
+    100034: Neck
+    100036: PelvicFin1
+    100038: PelvicFin2
+    100040: PelvicFin2_end
+    100042: RearBottomFin1
+    100044: RearBottomFin2
+    100046: RearBottomFin2_end
+    100048: //RootNode
+    100050: Roach
+    100052: Roach Skeleton
+    100054: Spine 1
+    100056: Spine2
+    100058: Tail1
+    100060: Tail2
+    100062: Tail3
+    100064: Tail3_end
+    400000: DorsalFin1
+    400002: DorsalFin2
+    400004: DorsalFin2_end
+    400006: Fin1.L
+    400008: Fin1.R
+    400010: Fin2.L
+    400012: Fin2.R
+    400014: Fin3.L
+    400016: Fin3.L_end
+    400018: Fin3.R
+    400020: Fin3.R_end
+    400022: Head1
+    400024: Head2
+    400026: Head2_end
+    400028: Jaw1
+    400030: Jaw2
+    400032: Jaw2_end
+    400034: Neck
+    400036: PelvicFin1
+    400038: PelvicFin2
+    400040: PelvicFin2_end
+    400042: RearBottomFin1
+    400044: RearBottomFin2
+    400046: RearBottomFin2_end
+    400048: Roach
+    400050: //RootNode
+    400052: Roach Skeleton
+    400054: Spine 1
+    400056: Spine2
+    400058: Tail1
+    400060: Tail2
+    400062: Tail3
+    400064: Tail3_end
+    2100000: Roach Skin 1
+    2100002: Roach Skin 2
+    2100004: Roach Skin 3
+    2100006: Roach Skin 4
+    2100008: Roach Eyes
+    2100010: Roach Mouth
+    4300000: Roach
+    7400000: Idle
+    7400002: Swim
+    7400004: Eat
+    7400006: Death
+    7400008: Death Loop
+    9500000: //RootNode
+    13700000: Roach
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roach Eyes
+    second: {fileID: 2100000, guid: 41a37559a1924ac47b4d5138208f2c30, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roach Mouth
+    second: {fileID: 2100000, guid: 6c11f094f3c911842b50db92da3ed739, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roach Skin 1
+    second: {fileID: 2100000, guid: d46fdbc5b92f1c54b8c081efb2289ace, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roach Skin 2
+    second: {fileID: 2100000, guid: ea29fb5c644d26b4caa95836d181cab4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roach Skin 3
+    second: {fileID: 2100000, guid: a0fa53dd733f1ae478321d2ade0f6c3f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roach Skin 4
+    second: {fileID: 2100000, guid: 27ffeb2ab3640a144bc7230c8f53bf0e, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
