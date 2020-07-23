@@ -10,7 +10,7 @@ namespace RPG.Questing
         List<Quest> activeQuests = new List<Quest>();
         List<Quest> completedQuests = new List<Quest>();
 
-        //public event Action
+        public event Action onQuestUpdated;
 
         private void Update()
         {
