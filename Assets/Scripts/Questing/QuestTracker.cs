@@ -36,11 +36,13 @@ namespace RPG.Questing
         {
             activeQuests.Remove(quest);
             completedQuests.Add(quest);
+            onQuestUpdated.Invoke();
         }
 
         public void StartQuest(Quest quest)
         {
             activeQuests.Add(quest);
+            onQuestUpdated.Invoke();
         }
 
         public object CaptureState()

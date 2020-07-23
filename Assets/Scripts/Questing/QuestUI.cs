@@ -5,7 +5,7 @@ namespace RPG.Questing
 {
     public class QuestUI : MonoBehaviour
     {
-        [SerializeField] Canvas canvas = default;
+        [SerializeField] GameObject panel = default;
         [SerializeField] Text titleText = default;
         [SerializeField] Text descriptionText = default;
 
@@ -14,6 +14,7 @@ namespace RPG.Questing
         private void Awake()
         {
             questTracker = FindObjectOfType<QuestTracker>();
+            panel.SetActive(false);
         }
 
         private void OnEnable()
