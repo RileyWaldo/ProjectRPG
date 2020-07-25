@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc23181f3a8c8b949a5b3287862fec70, type: 3}
   m_Name: KillGoblins
   m_EditorClassIdentifier: 
-  amountToAchieve: 1
+  amountToAchieve: 5
   enemyToKill: {fileID: 0}
