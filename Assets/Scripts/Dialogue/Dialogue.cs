@@ -1,35 +1,86 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections.Generic;
+using UnityEngine;
 
 namespace RPG.Dialogue
 {
-    [CreateAssetMenu(fileName = "Dialogue", menuName = "RPG/Create New Dialogue", order = 2)]
+    [CreateAssetMenu(fileName = "New Dialogue", menuName = "RPG/Create New Dialogue", order = 2)]
     public class Dialogue : ScriptableObject
     {
-        [SerializeField] Phase[] phases = default;
+        [SerializeField] List<DialogueNode> nodes = new List<DialogueNode>();
 
-        public string GetText(int index)
+        Dictionary<string, DialogueNode> nodeLookUp = new Dictionary<string, DialogueNode>();
+
+#if UNITY_EDITOR
+        private void Awake()
         {
-            return phases[index].text;
+            if(nodes.Count < 1)
+            {
+                DialogueNode rootNode = new DialogueNode();
+                rootNode.UniqueID = Guid.NewGuid().ToString();
+                nodes.Add(rootNode);
+            }
+        }
+#endif
+        private void OnValidate()
+        {
+            nodeLookUp.Clear();
+            foreach(DialogueNode node in GetAllNodes())
+            {
+                nodeLookUp[node.UniqueID] = node;
+            }
         }
 
-        public AudioClip GetAudioClip(int index)
+        public IEnumerable<DialogueNode> GetAllNodes()
         {
-            return phases[index].audioClip;
+            return nodes;
         }
 
-        [System.Serializable]
-        private class Phase
+        public DialogueNode GetRootNode()
         {
-            [TextArea(3, 4)]
-            public string text = "";
-            public AudioClip audioClip = null;
-            public Choice[] choices = null;
+            return nodes[0];
         }
 
-        private struct Choice
+        public IEnumerable<DialogueNode> GetAllChildren(DialogueNode parentNode)
         {
-            string text;
-            Dialogue dialogue;
+            foreach(string childID in parentNode.children)
+            {
+                if(nodeLookUp.ContainsKey(childID))
+                {
+                    yield return nodeLookUp[childID];
+                }
+            }
+        }
+
+        public int GetNodeCount()
+        {
+            return nodes.Count;
+        }
+
+        public void CreateNode(DialogueNode parentNode)
+        {
+            DialogueNode newNode = new DialogueNode();
+            newNode.UniqueID = Guid.NewGuid().ToString();
+            newNode.rect = parentNode.rect;
+            newNode.rect.position += new Vector2(parentNode.rect.width + 25, 25);
+            parentNode.children.Add(newNode.UniqueID);
+            nodes.Add(newNode);
+            OnValidate();
+        }
+
+        public void DeleteNode(DialogueNode nodeToDelete)
+        {
+            nodes.Remove(nodeToDelete);
+            OnValidate();
+            RemoveDanglingChildren(nodeToDelete);
+        }
+
+        private void RemoveDanglingChildren(DialogueNode nodeToDelete)
+        {
+            foreach (DialogueNode node in GetAllNodes())
+            {
+                node.children.Remove(nodeToDelete.UniqueID);
+            }
         }
     }
 }

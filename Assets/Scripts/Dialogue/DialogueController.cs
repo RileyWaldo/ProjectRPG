@@ -38,11 +38,7 @@ namespace RPG.Dialogue
 
         public void StartDialogue(Dialogue dialogue)
         {
-            currentDialogue = dialogue;
-            dialogueIndex = 0;
-            typeOut = currentDialogue.GetText(dialogueIndex).Length;
-            dialogBox.SetActive(true);
-            printText = "";
+            
         }
 
         public void ShowDialogue(bool show)
