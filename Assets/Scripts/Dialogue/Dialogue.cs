@@ -1,33 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 namespace RPG.Dialogue
 {
     [CreateAssetMenu(fileName = "New Dialogue", menuName = "RPG/Create New Dialogue", order = 2)]
-    public class Dialogue : ScriptableObject
+    public class Dialogue : ScriptableObject, ISerializationCallbackReceiver
     {
         [SerializeField] List<DialogueNode> nodes = new List<DialogueNode>();
 
         Dictionary<string, DialogueNode> nodeLookUp = new Dictionary<string, DialogueNode>();
 
-#if UNITY_EDITOR
-        private void Awake()
-        {
-            if(nodes.Count < 1)
-            {
-                DialogueNode rootNode = new DialogueNode();
-                rootNode.UniqueID = Guid.NewGuid().ToString();
-                nodes.Add(rootNode);
-            }
-        }
-#endif
         private void OnValidate()
         {
             nodeLookUp.Clear();
             foreach(DialogueNode node in GetAllNodes())
             {
-                nodeLookUp[node.UniqueID] = node;
+                nodeLookUp[node.name] = node;
             }
         }
 
@@ -43,7 +33,7 @@ namespace RPG.Dialogue
 
         public IEnumerable<DialogueNode> GetAllChildren(DialogueNode parentNode)
         {
-            foreach(string childID in parentNode.children)
+            foreach(string childID in parentNode.GetChildren())
             {
                 if(nodeLookUp.ContainsKey(childID))
                 {
@@ -57,30 +47,77 @@ namespace RPG.Dialogue
             return nodes.Count;
         }
 
+#if UNITY_EDITOR
         public void CreateNode(DialogueNode parentNode)
         {
-            DialogueNode newNode = new DialogueNode();
-            newNode.UniqueID = Guid.NewGuid().ToString();
-            newNode.rect = parentNode.rect;
-            newNode.rect.position += new Vector2(parentNode.rect.width + 25, 25);
-            parentNode.children.Add(newNode.UniqueID);
+            DialogueNode newNode = MakeNode(parentNode);
+            Undo.RegisterCreatedObjectUndo(newNode, "Created Dialogue Node");
+            Undo.RecordObject(this, "Added Dialouge Node");
+            AddNode(newNode);
+        }
+
+        private DialogueNode MakeNode(DialogueNode parentNode)
+        {
+            DialogueNode newNode = CreateInstance<DialogueNode>();
+            newNode.name = Guid.NewGuid().ToString();
+            if (parentNode != null)
+            {
+                parentNode.AddChild(newNode.name);
+                newNode.SetPosition(parentNode.GetRect().position + new Vector2(parentNode.GetRect().width + 25, 25));
+            }
+
+            return newNode;
+        }
+
+        private void AddNode(DialogueNode newNode)
+        {
             nodes.Add(newNode);
             OnValidate();
         }
 
         public void DeleteNode(DialogueNode nodeToDelete)
         {
+            Undo.RecordObject(this, "Deleted Dialogue Node");
             nodes.Remove(nodeToDelete);
             OnValidate();
             RemoveDanglingChildren(nodeToDelete);
+            Undo.DestroyObjectImmediate(nodeToDelete);
         }
 
         private void RemoveDanglingChildren(DialogueNode nodeToDelete)
         {
             foreach (DialogueNode node in GetAllNodes())
             {
-                node.children.Remove(nodeToDelete.UniqueID);
+                node.RemoveChild(nodeToDelete.name);
             }
+        }
+#endif
+
+        public void OnBeforeSerialize()
+        {
+#if UNITY_EDITOR
+            if (nodes.Count == 0)
+            {
+                DialogueNode newNode = MakeNode(null);
+                AddNode(newNode);
+            }
+
+            if (AssetDatabase.GetAssetPath(this) != "")
+            {
+                foreach(DialogueNode node in GetAllNodes())
+                {
+                    if(AssetDatabase.GetAssetPath(node) == "")
+                    {
+                        AssetDatabase.AddObjectToAsset(node, this);
+                    }
+                }
+            }
+#endif
+        }
+
+        public void OnAfterDeserialize()
+        {
+            
         }
     }
 }
