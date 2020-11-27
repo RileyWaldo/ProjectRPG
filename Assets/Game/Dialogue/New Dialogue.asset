@@ -1,5 +1,26 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7140759999336576910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: a32c6d91-ccf6-4008-9c28-40941baed161
+  m_EditorClassIdentifier: 
+  text: 
+  voiceAudio: {fileID: 0}
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 502
+    y: 112
+    width: 200
+    height: 100
 --- !u!114 &-5555295179577994830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12,12 +33,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
   m_Name: 81ee598b-82a8-4671-a3e7-a6cd7d191a8b
   m_EditorClassIdentifier: 
-  text: 
-  children: []
+  text: Sup?
+  voiceAudio: {fileID: 0}
+  children:
+  - a32c6d91-ccf6-4008-9c28-40941baed161
   rect:
     serializedVersion: 2
-    x: 169
-    y: 28
+    x: 218
+    y: 78
     width: 200
     height: 100
 --- !u!114 &11400000
@@ -34,3 +57,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodes:
   - {fileID: -5555295179577994830}
+  - {fileID: -7140759999336576910}

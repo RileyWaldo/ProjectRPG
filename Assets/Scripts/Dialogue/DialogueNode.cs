@@ -6,7 +6,9 @@ namespace RPG.Dialogue
 {
     public class DialogueNode : ScriptableObject
     {
+        [TextArea(5, 5)]
         [SerializeField] string text = "";
+        [SerializeField] AudioClip voiceAudio = default;
         [SerializeField] List<string> children = new List<string>();
         [SerializeField] Rect rect = new Rect(0, 0, 200, 100);
 

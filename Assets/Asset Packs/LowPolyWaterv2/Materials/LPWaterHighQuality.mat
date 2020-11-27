@@ -97,3 +97,4 @@ Material:
     - _SpecColor: {r: 0.5955882, g: 0.57104737, b: 0.35472533, a: 1}
     - _Sun: {r: 0.3213939, g: 0.76604444, b: -0.5566703, a: 0}
     - _SunColor: {r: 1, g: 0.8156863, b: 0.6509804, a: 1}
+  m_BuildTextureStacks: []
