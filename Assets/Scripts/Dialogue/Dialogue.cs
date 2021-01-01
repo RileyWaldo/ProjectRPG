@@ -8,6 +8,7 @@ namespace RPG.Dialogue
     [CreateAssetMenu(fileName = "New Dialogue", menuName = "RPG/Create New Dialogue", order = 2)]
     public class Dialogue : ScriptableObject, ISerializationCallbackReceiver
     {
+        [SerializeField] Vector2 newNodeOffSet = new Vector2(250, 25);
         [SerializeField] List<DialogueNode> nodes = new List<DialogueNode>();
 
         Dictionary<string, DialogueNode> nodeLookUp = new Dictionary<string, DialogueNode>();
@@ -60,10 +61,15 @@ namespace RPG.Dialogue
         {
             DialogueNode newNode = CreateInstance<DialogueNode>();
             newNode.name = Guid.NewGuid().ToString();
+
             if (parentNode != null)
             {
                 parentNode.AddChild(newNode.name);
-                newNode.SetPosition(parentNode.GetRect().position + new Vector2(parentNode.GetRect().width + 25, 25));
+                newNode.SetPosition(parentNode.GetRect().position + newNodeOffSet);
+                if (parentNode.GetSpeaker() == DialogueSpeaker.Player)
+                    newNode.SetSpeaker(DialogueSpeaker.NPC1);
+                else
+                    newNode.SetSpeaker(DialogueSpeaker.Player);
             }
 
             return newNode;

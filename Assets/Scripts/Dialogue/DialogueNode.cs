@@ -4,13 +4,27 @@ using UnityEngine;
 
 namespace RPG.Dialogue
 {
+    public enum DialogueSpeaker
+    {
+        Player,
+        NPC1,
+        NPC2,
+        NPC3
+    }
+
     public class DialogueNode : ScriptableObject
     {
+        [SerializeField] DialogueSpeaker speaker = DialogueSpeaker.NPC1;
         [TextArea(5, 5)]
         [SerializeField] string text = "";
         [SerializeField] AudioClip voiceAudio = default;
         [SerializeField] List<string> children = new List<string>();
         [SerializeField] Rect rect = new Rect(0, 0, 200, 100);
+
+        public DialogueSpeaker GetSpeaker()
+        {
+            return speaker;
+        }
 
         public string GetText()
         {
@@ -28,6 +42,13 @@ namespace RPG.Dialogue
         }
 
 #if UNITY_EDITOR
+        public void SetSpeaker(DialogueSpeaker newSpeaker)
+        {
+            Undo.RecordObject(this, "Updated Dialogue Node Speaker");
+            speaker = newSpeaker;
+            EditorUtility.SetDirty(this);
+        }
+
         public void SetText(string newText)
         {
             if(newText != text)

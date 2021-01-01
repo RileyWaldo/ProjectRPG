@@ -8,7 +8,7 @@ namespace RPG.Dialogue.Editor
     public class DialogueEditor : EditorWindow
     {
         Dialogue selectedDialogue = null;
-        [NonSerialized] GUIStyle nodeStyle;
+        [NonSerialized] GUIStyle[] nodeStyle = new GUIStyle[4];
         [NonSerialized] DialogueNode draggingNode = null;
         [NonSerialized] DialogueNode creatingNode = null;
         [NonSerialized] DialogueNode deletingNode = null;
@@ -42,7 +42,7 @@ namespace RPG.Dialogue.Editor
         private void OnEnable()
         {
             Selection.selectionChanged += OnSelectionChanged;
-            StyleNode();
+            StyleNodes();
         }
 
         private void OnDisable()
@@ -50,13 +50,16 @@ namespace RPG.Dialogue.Editor
             Selection.selectionChanged -= OnSelectionChanged;
         }
 
-        private void StyleNode()
+        private void StyleNodes()
         {
-            nodeStyle = new GUIStyle();
-            nodeStyle.normal.background = EditorGUIUtility.Load("node0") as Texture2D;
-            nodeStyle.padding = new RectOffset(16, 16, 16, 16);
-            nodeStyle.border = new RectOffset(12, 12, 12, 12);
-            nodeStyle.normal.textColor = Color.white;
+            for (int i = 0; i < Enum.GetNames(typeof(DialogueSpeaker)).Length; i++)
+            {
+                nodeStyle[i] = new GUIStyle();
+                nodeStyle[i].normal.background = EditorGUIUtility.Load("node" + i.ToString()) as Texture2D;
+                nodeStyle[i].padding = new RectOffset(16, 16, 16, 16);
+                nodeStyle[i].border = new RectOffset(12, 12, 12, 12);
+                nodeStyle[i].normal.textColor = Color.white;
+            }
         }
 
         private void OnSelectionChanged()
@@ -150,7 +153,9 @@ namespace RPG.Dialogue.Editor
 
         private void DrawNode(DialogueNode node)
         {
-            GUILayout.BeginArea(node.GetRect(), nodeStyle);
+            GUIStyle style = GetNodeStyle(node.GetSpeaker());
+
+            GUILayout.BeginArea(node.GetRect(), style);
 
             node.SetText(EditorGUILayout.TextField(node.GetText()));
 
@@ -174,6 +179,19 @@ namespace RPG.Dialogue.Editor
             GUILayout.EndHorizontal();
 
             GUILayout.EndArea();
+        }
+
+        private GUIStyle GetNodeStyle(DialogueSpeaker speaker)
+        {
+            GUIStyle style = nodeStyle[0];
+            if (speaker == DialogueSpeaker.NPC1)
+                style = nodeStyle[1];
+            else if (speaker == DialogueSpeaker.NPC2)
+                style = nodeStyle[2];
+            else if (speaker == DialogueSpeaker.NPC3)
+                style = nodeStyle[3];
+
+            return style;
         }
 
         private void DrawLinkButtons(DialogueNode node)
