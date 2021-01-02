@@ -18,6 +18,8 @@ namespace RPG.Dialogue
         [TextArea(5, 5)]
         [SerializeField] string text = "";
         [SerializeField] AudioClip voiceAudio = default;
+        [SerializeField] string onEnterAction = "";
+        [SerializeField] string onExitAction = "";
         [SerializeField] List<string> children = new List<string>();
         [SerializeField] Rect rect = new Rect(0, 0, 200, 100);
 
@@ -39,6 +41,16 @@ namespace RPG.Dialogue
         public Rect GetRect()
         {
             return rect;
+        }
+
+        public string GetOnEnterAction()
+        {
+            return onEnterAction;
+        }
+
+        public string GetOnExitAction()
+        {
+            return onExitAction;
         }
 
 #if UNITY_EDITOR

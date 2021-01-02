@@ -40,6 +40,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventorySlots: []
+--- !u!114 &677675253817861377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3751958103522869505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54a5e195b5aafcc43962a130cbe4256b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentDialogue: {fileID: 11400000, guid: f18e990f976b3e94e82696c6835eeb07, type: 2}
 --- !u!1001 &565599908181553216
 PrefabInstance:
   m_ObjectHideFlags: 0

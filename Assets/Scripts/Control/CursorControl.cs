@@ -6,7 +6,8 @@ public enum CursorType
     Movement,
     Combat,
     UI,
-    PickUp
+    PickUp,
+    Dialogue
 }
 
 namespace RPG.Control

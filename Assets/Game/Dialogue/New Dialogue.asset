@@ -12,14 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
   m_Name: a32c6d91-ccf6-4008-9c28-40941baed161
   m_EditorClassIdentifier: 
-  speaker: 1
-  text: 
+  speaker: 0
+  text: hello
   voiceAudio: {fileID: 0}
-  children: []
+  onEnterAction: 
+  onExitAction: 
+  children:
+  - 9f561cbc-2b1e-403e-b7d7-460af9480500
   rect:
     serializedVersion: 2
-    x: 527
-    y: 233
+    x: 538
+    y: 92
     width: 200
     height: 100
 --- !u!114 &-5555295179577994830
@@ -34,15 +37,67 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
   m_Name: 81ee598b-82a8-4671-a3e7-a6cd7d191a8b
   m_EditorClassIdentifier: 
-  speaker: 0
-  text: 
+  speaker: 1
+  text: Doinks!
   voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: exited
   children:
   - a32c6d91-ccf6-4008-9c28-40941baed161
+  - ac881348-eb4c-4e69-8ba8-4dfac67a2e37
   rect:
     serializedVersion: 2
-    x: 182
-    y: 149
+    x: 179
+    y: 181
+    width: 200
+    height: 100
+--- !u!114 &-4169949076798064790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: f5702dc6-5f0f-4a23-b717-3281e1cbf294
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: foech
+  voiceAudio: {fileID: 0}
+  onEnterAction: entered
+  onExitAction: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 906
+    y: 313
+    width: 200
+    height: 100
+--- !u!114 &-3364562472333115722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: ac881348-eb4c-4e69-8ba8-4dfac67a2e37
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Go to hell
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  children:
+  - f5702dc6-5f0f-4a23-b717-3281e1cbf294
+  rect:
+    serializedVersion: 2
+    x: 524
+    y: 270
     width: 200
     height: 100
 --- !u!114 &11400000
@@ -61,3 +116,30 @@ MonoBehaviour:
   nodes:
   - {fileID: -5555295179577994830}
   - {fileID: -7140759999336576910}
+  - {fileID: 570477743564443593}
+  - {fileID: -3364562472333115722}
+  - {fileID: -4169949076798064790}
+--- !u!114 &570477743564443593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 9f561cbc-2b1e-403e-b7d7-460af9480500
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: nope
+  voiceAudio: {fileID: 0}
+  onEnterAction: entered
+  onExitAction: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 881
+    y: 156
+    width: 200
+    height: 100
