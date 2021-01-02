@@ -421,6 +421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea350fbfd03a1f64682fcec810be88ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameText: {fileID: 1976998870025875281}
   AIText: {fileID: 2001648865207268092}
   nextButton: {fileID: 8053807533499849696}
   quitButton: {fileID: 7222515637854785590}

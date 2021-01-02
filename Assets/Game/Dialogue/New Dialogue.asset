@@ -41,7 +41,7 @@ MonoBehaviour:
   text: Doinks!
   voiceAudio: {fileID: 0}
   onEnterAction: 
-  onExitAction: exited
+  onExitAction: 
   children:
   - a32c6d91-ccf6-4008-9c28-40941baed161
   - ac881348-eb4c-4e69-8ba8-4dfac67a2e37
@@ -66,8 +66,8 @@ MonoBehaviour:
   speaker: 1
   text: foech
   voiceAudio: {fileID: 0}
-  onEnterAction: entered
-  onExitAction: 
+  onEnterAction: 
+  onExitAction: Attack
   children: []
   rect:
     serializedVersion: 2
@@ -134,7 +134,7 @@ MonoBehaviour:
   speaker: 1
   text: nope
   voiceAudio: {fileID: 0}
-  onEnterAction: entered
+  onEnterAction: 
   onExitAction: 
   children: []
   rect:

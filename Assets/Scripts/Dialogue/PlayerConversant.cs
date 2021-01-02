@@ -8,6 +8,8 @@ namespace RPG.Dialogue
 {
     public class PlayerConversant : MonoBehaviour
     {
+        [SerializeField] string playerName = "Hero";
+
         Dialogue currentDialogue = default;
         DialogueNode currentNode = null;
         AIConversant currentConversant = null;
@@ -38,6 +40,18 @@ namespace RPG.Dialogue
         public bool IsActive()
         {
             return currentDialogue != null;
+        }
+
+        public string GetName()
+        {
+            if(isChoosing)
+            {
+                return playerName;
+            }
+            else
+            {
+                return currentConversant.GetNPCName(currentNode.GetSpeaker());
+            }
         }
 
         public string GetText()
