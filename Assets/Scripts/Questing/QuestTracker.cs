@@ -5,54 +5,45 @@ using RPG.Saving;
 
 namespace RPG.Questing
 {
-    public class QuestTracker : MonoBehaviour, ISaveable
+    public class QuestTracker : MonoBehaviour//, ISaveable
     {
-        List<Quest> activeQuests = new List<Quest>();
-        List<Quest> completedQuests = new List<Quest>();
+        List<QuestStatus> statuses = new List<QuestStatus>();
 
-        public event Action onQuestUpdated;
+        public event Action onUpdateQuest;
 
-        private void Update()
+        public void AddQuest(Quest quest)
         {
-            foreach(Quest quest in activeQuests)
+            if (HasQuest(quest))
+                return;
+
+            QuestStatus newQuest = new QuestStatus(quest);
+            statuses.Add(newQuest);
+            onUpdateQuest?.Invoke();
+        }
+
+        public bool HasQuest(Quest quest)
+        {
+            foreach (QuestStatus status in statuses)
             {
-                UpdateGoals(quest);
-                if(quest.IsComplete())
-                {
-                    CompleteQuest(quest);
-                }
+                if (status.GetQuest() == quest)
+                    return true;
             }
+            return false;
         }
 
-        private static void UpdateGoals(Quest quest)
+        public IEnumerable<QuestStatus> GetStatuses()
         {
-            foreach (QuestGoal questGoal in quest.GetQuestGoals())
-            {
-                questGoal.CheckProgress();
-            }
+            return statuses;
         }
 
-        private void CompleteQuest(Quest quest)
-        {
-            activeQuests.Remove(quest);
-            completedQuests.Add(quest);
-            onQuestUpdated.Invoke();
-        }
+        //public object CaptureState()
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        public void StartQuest(Quest quest)
-        {
-            activeQuests.Add(quest);
-            onQuestUpdated.Invoke();
-        }
-
-        public object CaptureState()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void RestoreState(object state)
-        {
-            throw new NotImplementedException();
-        }
+        //public void RestoreState(object state)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

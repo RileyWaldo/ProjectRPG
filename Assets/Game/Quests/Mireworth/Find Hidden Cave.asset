@@ -10,11 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 379076bc02dcd514d8ad1fc2e6958507, type: 3}
-  m_Name: CrabQuest
+  m_Name: Find Hidden Cave
   m_EditorClassIdentifier: 
-  mainStoryQuest: 0
-  title: Crab Quest
-  description: Help crabby fight some goblins and reclaim his conch.
-  goals:
-  - {fileID: 11400000, guid: 474abf427f475b84cbebb691e0d105fb, type: 2}
-  - {fileID: 11400000, guid: ff5a69264471c334daf98fd8ab2c2de3, type: 2}
+  objectives:
+  - Find that cave
+  - Find treasure

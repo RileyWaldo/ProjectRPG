@@ -8,7 +8,7 @@ namespace RPG.Dialogue
     {
         [SerializeField] Dialogue dialogue = null;
         //[SerializeField] GameObject[] otherNPC;
-        [SerializeField] string[] NPCNames;
+        [SerializeField] string[] NPCNames = null;
 
         public string GetNPCName(DialogueSpeaker speaker)
         {

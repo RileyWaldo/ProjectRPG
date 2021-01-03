@@ -5,7 +5,7 @@ namespace RPG.Combat
     public class AggroGroup : MonoBehaviour
     {
         [SerializeField] bool activateOnStart = false;
-        [SerializeField] Fighter[] fighters;
+        [SerializeField] Fighter[] fighters = null;
 
         private void Start()
         {

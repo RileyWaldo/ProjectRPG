@@ -6,9 +6,10 @@ namespace RPG.Questing
     {
         [SerializeField] Quest quest = default;
 
-        public Quest GiveQuest()
+        public void GiveQuest()
         {
-            return quest;
+            QuestTracker questTracker = GameObject.FindGameObjectWithTag("Player").GetComponent<QuestTracker>();
+            questTracker.AddQuest(quest);
         }
     }
 }

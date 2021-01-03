@@ -194,6 +194,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventorySlots: []
+--- !u!114 &9136504437133360485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3751958103522869505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26050a57c50e96e439e8eb0d525b1274, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statuses:
+  - quest: {fileID: 0}
+    completedObjectives: []
+  - quest: {fileID: 0}
+    completedObjectives: []
 --- !u!1001 &565599908181553216
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -441,12 +458,12 @@ PrefabInstance:
     - target: {fileID: 8107345676390070275, guid: 1495c0e2eb60f694badda7100b0f243f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8290969356655161359, guid: 1495c0e2eb60f694badda7100b0f243f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1495c0e2eb60f694badda7100b0f243f, type: 3}

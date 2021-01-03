@@ -72,7 +72,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 906
-    y: 313
+    y: 312
     width: 200
     height: 100
 --- !u!114 &-3364562472333115722
@@ -139,7 +139,7 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 846
-    y: 147
+    x: 881
+    y: 156
     width: 200
     height: 100

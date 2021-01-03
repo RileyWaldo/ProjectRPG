@@ -6,7 +6,7 @@ namespace RPG.Dialogue
     public class DialogueTrigger : MonoBehaviour
     {
         [SerializeField] string action = "";
-        [SerializeField] UnityEvent onTrigger;
+        [SerializeField] UnityEvent onTrigger = null;
 
         public void Trigger(string actionToTrigger)
         {
