@@ -367,7 +367,6 @@ GameObject:
   - component: {fileID: 82919771728183082}
   - component: {fileID: 3485481513942764768}
   - component: {fileID: 8197661442229166559}
-  - component: {fileID: 6481008828030816361}
   - component: {fileID: 4100985584344855305}
   m_Layer: 0
   m_Name: Character
@@ -458,6 +457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 4
+  maxNavMeshPathLength: 40
 --- !u!114 &82919771728183082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -507,6 +507,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3811679418280027476}
+        m_TargetAssemblyTypeName: 
         m_MethodName: Spawn
         m_Mode: 0
         m_Arguments:
@@ -518,6 +519,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 2541279310413184864}
+        m_TargetAssemblyTypeName: 
         m_MethodName: PlayRandomClip
         m_Mode: 1
         m_Arguments:
@@ -532,6 +534,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3870759654758698153}
+        m_TargetAssemblyTypeName: 
         m_MethodName: PlayRandomClip
         m_Mode: 1
         m_Arguments:
@@ -542,19 +545,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &6481008828030816361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5592198893172740350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ea9374b509b70f4bba37e4a2ca8cf00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uniqueIdentifier: 
 --- !u!136 &4100985584344855305
 CapsuleCollider:
   m_ObjectHideFlags: 0

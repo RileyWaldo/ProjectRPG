@@ -33,6 +33,11 @@ namespace RPG.Dialogue
             return text;
         }
 
+        public AudioClip GetVoiceClip()
+        {
+            return voiceAudio;
+        }
+
         public List<string> GetChildren()
         {
             return children;

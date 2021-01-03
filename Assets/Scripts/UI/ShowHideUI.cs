@@ -7,7 +7,7 @@ namespace RPG.UI
     {
         [SerializeField] KeyCode toggleKey = KeyCode.Escape;
         [SerializeField] GameObject uiContainer = null;
-        [SerializeField] UnityEvent onToggle;
+        [SerializeField] UnityEvent onToggle = null;
 
         private void Start()
         {

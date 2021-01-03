@@ -9,6 +9,7 @@ namespace RPG.Dialogue
     public class PlayerConversant : MonoBehaviour
     {
         [SerializeField] string playerName = "Hero";
+        [SerializeField] AudioSource audioSource = default;
 
         Dialogue currentDialogue = default;
         DialogueNode currentNode = null;
@@ -25,10 +26,12 @@ namespace RPG.Dialogue
             currentNode = currentDialogue.GetRootNode();
             TriggerEnterAction();
             onConversationUpdated();
+            PlayVoiceClip();
         }
 
         public void QuitDialogue()
         {
+            audioSource.Stop();
             TriggerExitAction();
             currentConversant = null;
             currentDialogue = null;
@@ -84,8 +87,9 @@ namespace RPG.Dialogue
 
         public void Next()
         {
+            audioSource.Stop();
             int numPlayerResponses = currentDialogue.GetPlayerChildren(currentNode).Count();
-            if(numPlayerResponses > 0)
+            if (numPlayerResponses > 0)
             {
                 isChoosing = true;
                 TriggerExitAction();
@@ -99,6 +103,17 @@ namespace RPG.Dialogue
             currentNode = children[randomIndex];
             TriggerEnterAction();
             onConversationUpdated();
+            PlayVoiceClip();
+        }
+
+        private void PlayVoiceClip()
+        {
+            AudioClip voiceClip = currentNode.GetVoiceClip();
+            if (voiceClip != null)
+            {
+                audioSource.clip = voiceClip;
+                audioSource.Play();
+            }
         }
 
         public bool HasNext()

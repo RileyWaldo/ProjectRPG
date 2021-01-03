@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7140759999336576910
+--- !u!114 &-8184198927928109391
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
-  m_Name: a32c6d91-ccf6-4008-9c28-40941baed161
+  m_Name: 8c851e07-6b9c-4ee4-8388-8465c2efc870
   m_EditorClassIdentifier: 
   speaker: 0
-  text: hello
+  text: Make me!
   voiceAudio: {fileID: 0}
   onEnterAction: 
   onExitAction: 
   children:
-  - 9f561cbc-2b1e-403e-b7d7-460af9480500
+  - a2084004-9a89-4c75-ace8-535ddd397a2e
   rect:
     serializedVersion: 2
-    x: 538
-    y: 92
+    x: 456
+    y: 170
     width: 200
     height: 100
---- !u!114 &-5555295179577994830
+--- !u!114 &-3011092916121234772
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -35,69 +35,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
-  m_Name: 81ee598b-82a8-4671-a3e7-a6cd7d191a8b
+  m_Name: f5f196b5-59a8-4251-96e7-018521cca9fc
   m_EditorClassIdentifier: 
   speaker: 1
-  text: Doinks!
-  voiceAudio: {fileID: 8300000, guid: 3c7c07c8652f4ee4abc2dbcf02390858, type: 3}
-  onEnterAction: 
-  onExitAction: 
-  children:
-  - a32c6d91-ccf6-4008-9c28-40941baed161
-  - ac881348-eb4c-4e69-8ba8-4dfac67a2e37
-  rect:
-    serializedVersion: 2
-    x: 179
-    y: 181
-    width: 200
-    height: 100
---- !u!114 &-4169949076798064790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
-  m_Name: f5702dc6-5f0f-4a23-b717-3281e1cbf294
-  m_EditorClassIdentifier: 
-  speaker: 1
-  text: foech
-  voiceAudio: {fileID: 8300000, guid: ec91d6a10497f71499690bd8097f8053, type: 3}
+  text: The king! Prepare to die!
+  voiceAudio: {fileID: 0}
   onEnterAction: 
   onExitAction: Attack
   children: []
   rect:
     serializedVersion: 2
-    x: 906
-    y: 313
-    width: 200
-    height: 100
---- !u!114 &-3364562472333115722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
-  m_Name: ac881348-eb4c-4e69-8ba8-4dfac67a2e37
-  m_EditorClassIdentifier: 
-  speaker: 0
-  text: Go to hell
-  voiceAudio: {fileID: 0}
-  onEnterAction: 
-  onExitAction: 
-  children:
-  - f5702dc6-5f0f-4a23-b717-3281e1cbf294
-  rect:
-    serializedVersion: 2
-    x: 524
-    y: 270
+    x: 703
+    y: 22
     width: 200
     height: 100
 --- !u!114 &11400000
@@ -110,16 +59,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 851c35a65dc9ee540a1b9ab9cdf45cad, type: 3}
-  m_Name: New Dialogue
+  m_Name: Samurai
   m_EditorClassIdentifier: 
-  newNodeOffSet: {x: 250, y: 0}
+  newNodeOffSet: {x: 250, y: 25}
   nodes:
-  - {fileID: -5555295179577994830}
-  - {fileID: -7140759999336576910}
-  - {fileID: 570477743564443593}
-  - {fileID: -3364562472333115722}
-  - {fileID: -4169949076798064790}
---- !u!114 &570477743564443593
+  - {fileID: 2562275197683110187}
+  - {fileID: -8184198927928109391}
+  - {fileID: 6497184067929568773}
+  - {fileID: 7132478753190069916}
+  - {fileID: -3011092916121234772}
+--- !u!114 &2562275197683110187
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -129,17 +78,68 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
-  m_Name: 9f561cbc-2b1e-403e-b7d7-460af9480500
+  m_Name: 93acb9e3-5a2d-42a2-b077-0503174088f0
   m_EditorClassIdentifier: 
   speaker: 1
-  text: nope
+  text: Stop right there!
   voiceAudio: {fileID: 0}
   onEnterAction: 
   onExitAction: 
+  children:
+  - 8c851e07-6b9c-4ee4-8388-8465c2efc870
+  - 8379befc-62fc-4582-9e2c-b3cab99cafce
+  rect:
+    serializedVersion: 2
+    x: 207
+    y: 145
+    width: 200
+    height: 100
+--- !u!114 &6497184067929568773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: a2084004-9a89-4c75-ace8-535ddd397a2e
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: Prepare to die!
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: Attack
   children: []
   rect:
     serializedVersion: 2
-    x: 846
-    y: 147
+    x: 879
+    y: 163
+    width: 200
+    height: 100
+--- !u!114 &7132478753190069916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 8379befc-62fc-4582-9e2c-b3cab99cafce
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Under whose authority?
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  children:
+  - f5f196b5-59a8-4251-96e7-018521cca9fc
+  rect:
+    serializedVersion: 2
+    x: 434
+    y: 54
     width: 200
     height: 100

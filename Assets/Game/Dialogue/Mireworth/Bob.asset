@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851c35a65dc9ee540a1b9ab9cdf45cad, type: 3}
+  m_Name: Bob
+  m_EditorClassIdentifier: 
+  newNodeOffSet: {x: 250, y: 25}
+  nodes:
+  - {fileID: 5259501508112846965}
+--- !u!114 &5259501508112846965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 5e38cc43-a4d5-438a-88cb-3276dcc06363
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: This peace is something that all true warriors strive for...
+  voiceAudio: {fileID: 8300000, guid: 1017dca12f3ed644db320093491d7e2d, type: 3}
+  onEnterAction: 
+  onExitAction: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 369
+    y: 230
+    width: 200
+    height: 100

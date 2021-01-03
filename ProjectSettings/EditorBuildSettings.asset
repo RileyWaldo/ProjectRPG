@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sandbox/SandBox2.unity
     guid: 5ca3e95fe3f72274d9656697d44f3c6c
+  - enabled: 1
+    path: Assets/Scenes/MireworthPort/MireworthPort.unity
+    guid: 047cdfd6600e69a449b64e06f5e3fcad
   m_configObjects: {}
