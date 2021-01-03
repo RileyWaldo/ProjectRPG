@@ -1,0 +1,355 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5117550341801269524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: e9eaee3d-52f7-4108-8b46-fa093b08888d
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Thanks!
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1513
+    y: 298
+    width: 200
+    height: 100
+--- !u!114 &-3600031014986767720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 09005b94-fb8e-4d94-9af0-230622f78d96
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: I'd like a room for the night, please.
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  children:
+  - 10ab13da-89ee-4221-a774-5f329f77ed12
+  rect:
+    serializedVersion: 2
+    x: 453
+    y: 293
+    width: 200
+    height: 100
+--- !u!114 &-2919346057655899517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: a4055646-90ca-4ecc-a760-f487ed696b09
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Suite, please! (10 simoleons)
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: Give key king room
+  children:
+  - 59334b01-7202-4cbd-80dd-9d575c426d69
+  - a49fbe2d-2b79-449c-9b01-840d8e920516
+  rect:
+    serializedVersion: 2
+    x: 950
+    y: 241
+    width: 200
+    height: 100
+--- !u!114 &-2781417582863697807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 10367bd6-3d2d-4e81-aa6a-705497efac02
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Standard room, please. (5 simoleons)
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: Give key small room
+  children:
+  - 59334b01-7202-4cbd-80dd-9d575c426d69
+  - a49fbe2d-2b79-449c-9b01-840d8e920516
+  rect:
+    serializedVersion: 2
+    x: 939
+    y: 369
+    width: 200
+    height: 100
+--- !u!114 &-2759386140492255165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: a49fbe2d-2b79-449c-9b01-840d8e920516
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: Here's the key!
+  voiceAudio: {fileID: 8300000, guid: ce1755dad580e1e42b5653369884555b, type: 3}
+  onEnterAction: 
+  onExitAction: 
+  children:
+  - e9eaee3d-52f7-4108-8b46-fa093b08888d
+  rect:
+    serializedVersion: 2
+    x: 1200
+    y: 361
+    width: 200
+    height: 100
+--- !u!114 &-712259036718226182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 59334b01-7202-4cbd-80dd-9d575c426d69
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: You don't have enough money!
+  voiceAudio: {fileID: 8300000, guid: cc5e1ac0645d22f4e9c8e00a5c70e1ca, type: 3}
+  onEnterAction: 
+  onExitAction: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1204
+    y: 241
+    width: 200
+    height: 100
+--- !u!114 &-156542153074623793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 10ab13da-89ee-4221-a774-5f329f77ed12
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: Absolutely! Would you like a standard room or a suite?
+  voiceAudio: {fileID: 8300000, guid: 4887a92dbdc6f6c4cbd9b6778f5363b8, type: 3}
+  onEnterAction: 
+  onExitAction: 
+  children:
+  - 10367bd6-3d2d-4e81-aa6a-705497efac02
+  - a4055646-90ca-4ecc-a760-f487ed696b09
+  rect:
+    serializedVersion: 2
+    x: 703
+    y: 318
+    width: 200
+    height: 100
+--- !u!114 &-137306762409065740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 3278e40c-d670-4885-ac35-a8ff3c5e2e90
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: Hey there! What can I do for ya?
+  voiceAudio: {fileID: 8300000, guid: c20986cf01801c4428bd0cd8f70b7a00, type: 3}
+  onEnterAction: 
+  onExitAction: 
+  children:
+  - 7a5635fd-f99e-4529-848c-c79e3dede0d7
+  - 09005b94-fb8e-4d94-9af0-230622f78d96
+  - b0e82b15-3f4a-4220-b55e-8033f1db7541
+  rect:
+    serializedVersion: 2
+    x: 166
+    y: 232
+    width: 200
+    height: 100
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851c35a65dc9ee540a1b9ab9cdf45cad, type: 3}
+  m_Name: BartenderPostQuest
+  m_EditorClassIdentifier: 
+  newNodeOffSet: {x: 250, y: 25}
+  nodes:
+  - {fileID: -137306762409065740}
+  - {fileID: 556718403597959678}
+  - {fileID: -3600031014986767720}
+  - {fileID: 1426381597065214607}
+  - {fileID: -156542153074623793}
+  - {fileID: 3296704622076613561}
+  - {fileID: -2781417582863697807}
+  - {fileID: -2919346057655899517}
+  - {fileID: 1970908148815625045}
+  - {fileID: 8977323253206494811}
+  - {fileID: -712259036718226182}
+  - {fileID: -2759386140492255165}
+  - {fileID: -5117550341801269524}
+--- !u!114 &556718403597959678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 7a5635fd-f99e-4529-848c-c79e3dede0d7
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: I'd like a drink, please!
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  children:
+  - 401e7f03-be9d-41be-b5ab-4272294fcfb5
+  rect:
+    serializedVersion: 2
+    x: 457
+    y: 181
+    width: 200
+    height: 100
+--- !u!114 &1426381597065214607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 401e7f03-be9d-41be-b5ab-4272294fcfb5
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: Certainly! That will be two simoleons!
+  voiceAudio: {fileID: 8300000, guid: bdc64b3d2976261478db6e75b42aabb2, type: 3}
+  onEnterAction: 
+  onExitAction: Add drink
+  children:
+  - fb04a71f-2ee9-4214-ba9e-7609ed324617
+  - 9f72787a-493d-4e8c-a0be-a969a8ef53a6
+  rect:
+    serializedVersion: 2
+    x: 717
+    y: 137
+    width: 200
+    height: 100
+--- !u!114 &1970908148815625045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: fb04a71f-2ee9-4214-ba9e-7609ed324617
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Thanks!
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 969
+    y: 21
+    width: 200
+    height: 100
+--- !u!114 &3296704622076613561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: b0e82b15-3f4a-4220-b55e-8033f1db7541
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Nothing, actually.
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 464
+    y: 417
+    width: 200
+    height: 100
+--- !u!114 &8977323253206494811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 9f72787a-493d-4e8c-a0be-a969a8ef53a6
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: I don't have enough money...
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 959
+    y: 115
+    width: 200
+    height: 100

@@ -88,6 +88,12 @@ namespace RPG.Dialogue
         public void Next()
         {
             audioSource.Stop();
+            if(currentDialogue.GetAllChildren(currentNode).Count() == 0)
+            {
+                QuitDialogue();
+                return;
+            }
+
             int numPlayerResponses = currentDialogue.GetPlayerChildren(currentNode).Count();
             if (numPlayerResponses > 0)
             {

@@ -1,0 +1,306 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9000639395405504053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 3c048ca5-f171-4f14-ac73-79a2f0fd4b38
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Thank you so much! Is there anything I can do to repay you for this valuable
+    information?
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  children:
+  - c0ca2c96-e81d-4509-9879-962e37058382
+  rect:
+    serializedVersion: 2
+    x: 1120
+    y: 305
+    width: 200
+    height: 100
+--- !u!114 &-7739774058205764290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 68c1fd8d-354b-4c34-a39a-8bf8f2693375
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: Fantastic! I have a bit of a rat problem in the cellar... Could you clear
+    those out for me?
+  voiceAudio: {fileID: 8300000, guid: 653b5d2e8dcbb09458751d2a9f3febe9, type: 3}
+  onEnterAction: 
+  onExitAction: 
+  children:
+  - 982c9f2f-313d-44e8-9fa2-fcbb68a246c1
+  - 1a132994-dd64-4c4f-b7f4-4bfeccd81202
+  rect:
+    serializedVersion: 2
+    x: 1910
+    y: 203
+    width: 200
+    height: 100
+--- !u!114 &-6995924505439107981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: ef7fd202-52d9-40a5-b98f-b5b535d94e6c
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: Oh, maybe some other time.
+  voiceAudio: {fileID: 8300000, guid: 19a7297aea16afa4d8a67eaa6abb9cc1, type: 3}
+  onEnterAction: 
+  onExitAction: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1856
+    y: 483
+    width: 200
+    height: 100
+--- !u!114 &-3516501779515232744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 91293c9b-00c2-438c-9c14-73952c2b83ba
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Actually, I'm not too thirsty. I just arrived here yesterday. My family was
+    taken in the night by men in cloaks! I'm so worried.
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  children:
+  - 46f1a65e-2c4c-499c-8d38-e34bb6b250c0
+  rect:
+    serializedVersion: 2
+    x: 619
+    y: 251
+    width: 200
+    height: 100
+--- !u!114 &-3361996900038318322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 22d1dbbd-9382-442f-9da9-118d949b75f2
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Actually, I don't have time to help you.
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  children:
+  - ef7fd202-52d9-40a5-b98f-b5b535d94e6c
+  rect:
+    serializedVersion: 2
+    x: 1598
+    y: 377
+    width: 200
+    height: 100
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851c35a65dc9ee540a1b9ab9cdf45cad, type: 3}
+  m_Name: Bartender
+  m_EditorClassIdentifier: 
+  newNodeOffSet: {x: 250, y: 25}
+  nodes:
+  - {fileID: 5259501508112846965}
+  - {fileID: -3516501779515232744}
+  - {fileID: 3543432249355341411}
+  - {fileID: -9000639395405504053}
+  - {fileID: 8706476852230538527}
+  - {fileID: -3361996900038318322}
+  - {fileID: 9021904439742722377}
+  - {fileID: -6995924505439107981}
+  - {fileID: -7739774058205764290}
+  - {fileID: 194254001660156206}
+  - {fileID: 3769505995511272895}
+--- !u!114 &194254001660156206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 982c9f2f-313d-44e8-9fa2-fcbb68a246c1
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Absolutely! I'll get right on it!
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: Quest
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2206
+    y: 130
+    width: 200
+    height: 100
+--- !u!114 &3543432249355341411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 46f1a65e-2c4c-499c-8d38-e34bb6b250c0
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: Ah, yes, I've heard about that. But, I wager the folks down at the Observatory
+    would know even more. You should go talk to them!
+  voiceAudio: {fileID: 8300000, guid: b1d82e916d29729468050788c5420c88, type: 3}
+  onEnterAction: 
+  onExitAction: 
+  children:
+  - 3c048ca5-f171-4f14-ac73-79a2f0fd4b38
+  rect:
+    serializedVersion: 2
+    x: 850
+    y: 276
+    width: 200
+    height: 100
+--- !u!114 &3769505995511272895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 1a132994-dd64-4c4f-b7f4-4bfeccd81202
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Maybe later.
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2204
+    y: 269
+    width: 200
+    height: 100
+--- !u!114 &5259501508112846965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 5e38cc43-a4d5-438a-88cb-3276dcc06363
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: Hey there, you look a little worse for wear. What's on your mind? Can I get
+    you a drink?
+  voiceAudio: {fileID: 8300000, guid: c45575f14d8cd784eab3916578f20713, type: 3}
+  onEnterAction: 
+  onExitAction: 
+  children:
+  - 91293c9b-00c2-438c-9c14-73952c2b83ba
+  rect:
+    serializedVersion: 2
+    x: 380
+    y: 213
+    width: 200
+    height: 100
+--- !u!114 &8706476852230538527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: c0ca2c96-e81d-4509-9879-962e37058382
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: As a matter of fact, I am having a bit of an issue...
+  voiceAudio: {fileID: 8300000, guid: b06e671942de72b41a9fb336dbbc48d0, type: 3}
+  onEnterAction: 
+  onExitAction: 
+  children:
+  - 22d1dbbd-9382-442f-9da9-118d949b75f2
+  - cb51f6c4-dd54-4802-a1a0-95061798f1ea
+  rect:
+    serializedVersion: 2
+    x: 1366
+    y: 311
+    width: 200
+    height: 100
+--- !u!114 &9021904439742722377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: cb51f6c4-dd54-4802-a1a0-95061798f1ea
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Oh, really? I'd love to help out if I can!
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  children:
+  - 68c1fd8d-354b-4c34-a39a-8bf8f2693375
+  rect:
+    serializedVersion: 2
+    x: 1608
+    y: 235
+    width: 200
+    height: 100

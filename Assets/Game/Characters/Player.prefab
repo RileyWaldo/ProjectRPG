@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54a5e195b5aafcc43962a130cbe4256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerName: Hero
+  playerName: Ulvor
   audioSource: {fileID: 8271092582976111038}
 --- !u!114 &5080259772630353399
 MonoBehaviour:

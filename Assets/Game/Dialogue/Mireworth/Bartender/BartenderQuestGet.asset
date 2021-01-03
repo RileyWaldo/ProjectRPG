@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851c35a65dc9ee540a1b9ab9cdf45cad, type: 3}
+  m_Name: BartenderQuestGet
+  m_EditorClassIdentifier: 
+  newNodeOffSet: {x: 250, y: 25}
+  nodes:
+  - {fileID: 4195106751388880310}
+  - {fileID: 1061723518793040118}
+--- !u!114 &1061723518793040118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: f151bb90-6372-46a5-907f-3beeb9cda971
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Not quite finished yet...
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 414
+    y: 216
+    width: 200
+    height: 100
+--- !u!114 &4195106751388880310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 3e86c096-2d6e-4227-8101-4894ce4f3a09
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: Hey there! How goes the situation in the cellar?
+  voiceAudio: {fileID: 8300000, guid: caaaa6f1aebfbd545ba95a9bac98326f, type: 3}
+  onEnterAction: 
+  onExitAction: 
+  children:
+  - f151bb90-6372-46a5-907f-3beeb9cda971
+  rect:
+    serializedVersion: 2
+    x: 164
+    y: 191
+    width: 200
+    height: 100

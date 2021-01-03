@@ -30,6 +30,7 @@ namespace RPG.Saving
 
         public void Load(string saveFile)
         {
+            print("Loaded save file");
             RestoreState(LoadFile(saveFile));
         }
 
