@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7140759999336576910
+--- !u!114 &-7753967271735838516
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,94 +10,71 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
-  m_Name: a32c6d91-ccf6-4008-9c28-40941baed161
+  m_Name: b616f8d9-1b50-4482-9f4a-843e1531d13b
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: Hello, I'm a crab!
+  voiceAudio: {fileID: 8300000, guid: cfbea7d67a814774c8505a2b81113791, type: 3}
+  onEnterAction: 
+  onExitAction: 
+  children:
+  - be4106ac-326b-4b53-ba88-c70af68e1d44
+  - 50814872-a388-4eb0-b86e-caadd675640d
+  rect:
+    serializedVersion: 2
+    x: 218
+    y: 197
+    width: 200
+    height: 100
+--- !u!114 &-7146169550801592248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: dad6619e-6325-42c8-9b43-763d22e6cc94
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: Hey, uh, you see that cave over there? It's making some freaky noises. You
+    should go check it out.
+  voiceAudio: {fileID: 8300000, guid: 25897aee15733c74d8ddaa91afd2795a, type: 3}
+  onEnterAction: 
+  onExitAction: 
+  children:
+  - acfdcbff-aae3-4867-aaf4-c8a3e97208c6
+  rect:
+    serializedVersion: 2
+    x: 773
+    y: 120
+    width: 200
+    height: 100
+--- !u!114 &-4803604440493597741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 50814872-a388-4eb0-b86e-caadd675640d
   m_EditorClassIdentifier: 
   speaker: 0
-  text: hello
+  text: Wow! I've never met a crab before!
   voiceAudio: {fileID: 0}
   onEnterAction: 
   onExitAction: 
   children:
-  - 9f561cbc-2b1e-403e-b7d7-460af9480500
+  - b10158b1-0a06-4927-b98d-3c5c2cf796c6
   rect:
     serializedVersion: 2
-    x: 538
-    y: 92
-    width: 200
-    height: 100
---- !u!114 &-5555295179577994830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
-  m_Name: 81ee598b-82a8-4671-a3e7-a6cd7d191a8b
-  m_EditorClassIdentifier: 
-  speaker: 1
-  text: Doinks!
-  voiceAudio: {fileID: 8300000, guid: 3c7c07c8652f4ee4abc2dbcf02390858, type: 3}
-  onEnterAction: 
-  onExitAction: 
-  children:
-  - a32c6d91-ccf6-4008-9c28-40941baed161
-  - ac881348-eb4c-4e69-8ba8-4dfac67a2e37
-  rect:
-    serializedVersion: 2
-    x: 179
-    y: 181
-    width: 200
-    height: 100
---- !u!114 &-4169949076798064790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
-  m_Name: f5702dc6-5f0f-4a23-b717-3281e1cbf294
-  m_EditorClassIdentifier: 
-  speaker: 1
-  text: foech
-  voiceAudio: {fileID: 8300000, guid: ec91d6a10497f71499690bd8097f8053, type: 3}
-  onEnterAction: 
-  onExitAction: Attack
-  children: []
-  rect:
-    serializedVersion: 2
-    x: 906
-    y: 312
-    width: 200
-    height: 100
---- !u!114 &-3364562472333115722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
-  m_Name: ac881348-eb4c-4e69-8ba8-4dfac67a2e37
-  m_EditorClassIdentifier: 
-  speaker: 0
-  text: Go to hell
-  voiceAudio: {fileID: 0}
-  onEnterAction: 
-  onExitAction: 
-  children:
-  - f5702dc6-5f0f-4a23-b717-3281e1cbf294
-  rect:
-    serializedVersion: 2
-    x: 524
-    y: 270
+    x: 542
+    y: 310
     width: 200
     height: 100
 --- !u!114 &11400000
@@ -110,16 +87,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 851c35a65dc9ee540a1b9ab9cdf45cad, type: 3}
-  m_Name: New Dialogue
+  m_Name: Crab2
   m_EditorClassIdentifier: 
-  newNodeOffSet: {x: 250, y: 0}
+  newNodeOffSet: {x: 250, y: 25}
   nodes:
-  - {fileID: -5555295179577994830}
-  - {fileID: -7140759999336576910}
-  - {fileID: 570477743564443593}
-  - {fileID: -3364562472333115722}
-  - {fileID: -4169949076798064790}
---- !u!114 &570477743564443593
+  - {fileID: -7753967271735838516}
+  - {fileID: 3016105133313347949}
+  - {fileID: -4803604440493597741}
+  - {fileID: 8009212801064443848}
+  - {fileID: -7146169550801592248}
+  - {fileID: 5813672292986276514}
+--- !u!114 &3016105133313347949
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -129,17 +107,66 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
-  m_Name: 9f561cbc-2b1e-403e-b7d7-460af9480500
+  m_Name: be4106ac-326b-4b53-ba88-c70af68e1d44
   m_EditorClassIdentifier: 
-  speaker: 1
-  text: nope
+  speaker: 0
+  text: Okay...
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  children:
+  - dad6619e-6325-42c8-9b43-763d22e6cc94
+  rect:
+    serializedVersion: 2
+    x: 523
+    y: 95
+    width: 200
+    height: 100
+--- !u!114 &5813672292986276514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: acfdcbff-aae3-4867-aaf4-c8a3e97208c6
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Okay, sure! Thanks!
   voiceAudio: {fileID: 0}
   onEnterAction: 
   onExitAction: 
   children: []
   rect:
     serializedVersion: 2
-    x: 881
-    y: 156
+    x: 1023
+    y: 145
+    width: 200
+    height: 100
+--- !u!114 &8009212801064443848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: b10158b1-0a06-4927-b98d-3c5c2cf796c6
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: And I've never met something so ugly! Please leave me alone!
+  voiceAudio: {fileID: 8300000, guid: 59b1cbc65331e4c45b9424e3c8f5e923, type: 3}
+  onEnterAction: 
+  onExitAction: Attack
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 792
+    y: 335
     width: 200
     height: 100
