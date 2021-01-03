@@ -21,8 +21,57 @@ MonoBehaviour:
   - a2084004-9a89-4c75-ace8-535ddd397a2e
   rect:
     serializedVersion: 2
-    x: 456
-    y: 170
+    x: 440
+    y: 257
+    width: 200
+    height: 100
+--- !u!114 &-5592324826001334671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: de897be5-bb33-4c5c-bb30-f1ba296f27a8
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: OH! JURIET!
+  voiceAudio: {fileID: 8300000, guid: f2ac393d9bf26d646bf9f88f4844bb4c, type: 3}
+  onEnterAction: 
+  onExitAction: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 696
+    y: 179
+    width: 200
+    height: 100
+--- !u!114 &-3888628359704389387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 21f0812d-1e35-47b5-ad2f-af89da9fe093
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Romeo or Juliet?
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  children:
+  - de897be5-bb33-4c5c-bb30-f1ba296f27a8
+  rect:
+    serializedVersion: 2
+    x: 446
+    y: 154
     width: 200
     height: 100
 --- !u!114 &-3011092916121234772
@@ -39,7 +88,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speaker: 1
   text: The king! Prepare to die!
-  voiceAudio: {fileID: 0}
+  voiceAudio: {fileID: 8300000, guid: 9b985766902c4f84987bcc21a246104b, type: 3}
   onEnterAction: 
   onExitAction: Attack
   children: []
@@ -68,6 +117,8 @@ MonoBehaviour:
   - {fileID: 6497184067929568773}
   - {fileID: 7132478753190069916}
   - {fileID: -3011092916121234772}
+  - {fileID: -3888628359704389387}
+  - {fileID: -5592324826001334671}
 --- !u!114 &2562275197683110187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,12 +133,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speaker: 1
   text: Stop right there!
-  voiceAudio: {fileID: 0}
+  voiceAudio: {fileID: 8300000, guid: 4a00ee0fc1538c647993951502d0b01d, type: 3}
   onEnterAction: 
   onExitAction: 
   children:
   - 8c851e07-6b9c-4ee4-8388-8465c2efc870
   - 8379befc-62fc-4582-9e2c-b3cab99cafce
+  - 21f0812d-1e35-47b5-ad2f-af89da9fe093
   rect:
     serializedVersion: 2
     x: 207
@@ -108,14 +160,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speaker: 1
   text: Prepare to die!
-  voiceAudio: {fileID: 0}
+  voiceAudio: {fileID: 8300000, guid: 0ffac3b2350b5fa4d9376aa3d60dddd8, type: 3}
   onEnterAction: 
   onExitAction: Attack
   children: []
   rect:
     serializedVersion: 2
-    x: 879
-    y: 163
+    x: 723
+    y: 326
     width: 200
     height: 100
 --- !u!114 &7132478753190069916
