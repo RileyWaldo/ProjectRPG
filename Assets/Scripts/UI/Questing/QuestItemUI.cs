@@ -8,7 +8,6 @@ namespace RPG.UI.Questing
     {
         [SerializeField] TextMeshProUGUI title = null;
         [SerializeField] TextMeshProUGUI progress = null;
-        [SerializeField] GameObject questInfoUIPrefab = null;
 
         public void SetUp(QuestStatus status)
         {
