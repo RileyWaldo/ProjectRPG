@@ -1,10 +1,9 @@
 ﻿using UnityEngine;
 using RPG.Control;
-using RPG.Saving;
 
 namespace RPG.Dialogue
 {
-    public class AIConversant : MonoBehaviour, IRaycastable, ISaveable
+    public class AIConversant : MonoBehaviour, IRaycastable
     {
         [SerializeField] Dialogue dialogue = null;
         //[SerializeField] GameObject[] otherNPC;
@@ -53,16 +52,6 @@ namespace RPG.Dialogue
                 callingController.GetComponent<PlayerConversant>().StartDialogue(this, dialogue);
             }
             return true;
-        }
-
-        public object CaptureState()
-        {
-            return dialogue;
-        }
-
-        public void RestoreState(object state)
-        {
-            dialogue = (Dialogue)state;
         }
     }
 }

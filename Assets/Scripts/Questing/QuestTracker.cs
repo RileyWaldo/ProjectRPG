@@ -5,7 +5,7 @@ using RPG.Saving;
 
 namespace RPG.Questing
 {
-    public class QuestTracker : MonoBehaviour//, ISaveable
+    public class QuestTracker : MonoBehaviour, ISaveable
     {
         List<QuestStatus> statuses = new List<QuestStatus>();
 
@@ -21,14 +21,16 @@ namespace RPG.Questing
             onUpdateQuest?.Invoke();
         }
 
+        public void CompleteObjective(Quest quest, string objective)
+        {
+            QuestStatus status = GetQuestStatus(quest);
+            status.CompleteObjective(objective);
+            onUpdateQuest?.Invoke();
+        }
+
         public bool HasQuest(Quest quest)
         {
-            foreach (QuestStatus status in statuses)
-            {
-                if (status.GetQuest() == quest)
-                    return true;
-            }
-            return false;
+            return GetQuestStatus(quest) != null;
         }
 
         public IEnumerable<QuestStatus> GetStatuses()
@@ -36,14 +38,37 @@ namespace RPG.Questing
             return statuses;
         }
 
-        //public object CaptureState()
-        //{
-        //    throw new NotImplementedException();
-        //}
+        private QuestStatus GetQuestStatus(Quest quest)
+        {
+            foreach (QuestStatus status in statuses)
+            {
+                if (status.GetQuest() == quest)
+                    return status;
+            }
+            return null;
+        }
 
-        //public void RestoreState(object state)
-        //{
-        //    throw new NotImplementedException();
-        //}
+        public object CaptureState()
+        {
+            List<object> state = new List<object>();
+            foreach(QuestStatus status in statuses)
+            {
+                state.Add(status.CaptureState());
+            }
+            return state;
+        }
+
+        public void RestoreState(object state)
+        {
+            List<object> stateList = state as List<object>;
+            if (stateList == null)
+                return;
+
+            statuses.Clear();
+            foreach(object objectState in stateList)
+            {
+                statuses.Add(new QuestStatus(objectState));
+            }
+        }
     }
 }

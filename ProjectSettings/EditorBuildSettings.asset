@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MireworthPort/MireworthPort.unity
     guid: 047cdfd6600e69a449b64e06f5e3fcad
+  - enabled: 1
+    path: Assets/Scenes/MireworthPort/BeachCave/BeachCave.unity
+    guid: 48b8524802dc5a0498f40cd5a5f15337
   m_configObjects: {}
