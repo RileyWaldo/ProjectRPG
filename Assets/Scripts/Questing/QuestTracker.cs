@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using RPG.Saving;
+using RPG.Core;
 
 namespace RPG.Questing
 {
-    public class QuestTracker : MonoBehaviour, ISaveable
+    public class QuestTracker : MonoBehaviour, ISaveable, IPredicateEvaluator
     {
         List<QuestStatus> statuses = new List<QuestStatus>();
 
@@ -25,6 +26,12 @@ namespace RPG.Questing
         {
             QuestStatus status = GetQuestStatus(quest);
             status.CompleteObjective(objective);
+
+            if(status.IsComplete())
+            {
+                GiveReward(quest);
+            }
+
             onUpdateQuest?.Invoke();
         }
 
@@ -36,16 +43,6 @@ namespace RPG.Questing
         public IEnumerable<QuestStatus> GetStatuses()
         {
             return statuses;
-        }
-
-        private QuestStatus GetQuestStatus(Quest quest)
-        {
-            foreach (QuestStatus status in statuses)
-            {
-                if (status.GetQuest() == quest)
-                    return status;
-            }
-            return null;
         }
 
         public object CaptureState()
@@ -69,6 +66,32 @@ namespace RPG.Questing
             {
                 statuses.Add(new QuestStatus(objectState));
             }
+        }
+
+        private QuestStatus GetQuestStatus(Quest quest)
+        {
+            foreach (QuestStatus status in statuses)
+            {
+                if (status.GetQuest() == quest)
+                    return status;
+            }
+            return null;
+        }
+
+        private void GiveReward(Quest quest)
+        {
+            Debug.Log("Quest Complete: heres your real fake rewards!");
+            //TODO: give rewards!!
+        }
+
+        public bool? Evaluate(string predicate, string[] parameters)
+        {
+            if(predicate != "HasQuest")
+            {
+                return null;
+            }
+
+            return HasQuest(Quest.GetByName(parameters[0]));
         }
     }
 }

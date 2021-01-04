@@ -54,6 +54,16 @@ namespace RPG.Questing
             }
         }
 
+        public bool IsComplete()
+        {
+            foreach(var objective in quest.GetObjectives())
+            {
+                if (!completedObjectives.Contains(objective.reference))
+                    return false;
+            }
+            return true;
+        }
+
         public object CaptureState()
         {
             QuestStatusRecord record = new QuestStatusRecord();

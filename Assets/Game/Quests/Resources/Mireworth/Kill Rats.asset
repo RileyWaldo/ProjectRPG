@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Kill Rats
   m_EditorClassIdentifier: 
   objectives:
-  - Kill Rats
+  - reference: Goal1
+    description: Kill Rats

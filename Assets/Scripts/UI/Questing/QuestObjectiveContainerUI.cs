@@ -7,19 +7,17 @@ namespace RPG.UI.Questing
     {
         [SerializeField] GameObject objectivePrefab = null;
 
-        public void SetUp(QuestStatus status, QuestInfoUI questInfo)
+        public void SetUp(QuestStatus status)
         {
-            questInfo.ShowInfo(true);
-
             foreach(Transform child in transform)
             {
                 Destroy(child.gameObject);
             }
 
-            foreach(string objective in status.GetQuest().GetObjectives())
+            foreach(var objective in status.GetQuest().GetObjectives())
             {
                 GameObject newObjective = Instantiate(objectivePrefab, transform);
-                newObjective.GetComponent<QuestObjectiveUI>().SetUp(objective, status.IsObjectiveComplete(objective));
+                newObjective.GetComponent<QuestObjectiveUI>().SetUp(objective.description, status.IsObjectiveComplete(objective.reference));
             }
         }
     }

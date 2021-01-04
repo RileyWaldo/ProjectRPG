@@ -6,7 +6,14 @@ namespace RPG.Questing
     [CreateAssetMenu(fileName = "Quest", menuName = "RPG/Create New Quest", order = 3)]
     public class Quest : ScriptableObject
     {
-        [SerializeField] string[] objectives = default;
+        [SerializeField] Objective[] objectives = default;
+
+        [System.Serializable]
+        public class Objective
+        {
+            public string reference = "";
+            public string description = "";
+        }
 
         public string GetTitle()
         {
@@ -18,16 +25,16 @@ namespace RPG.Questing
             return objectives.Length;
         }
 
-        public IEnumerable<string> GetObjectives()
+        public IEnumerable<Objective> GetObjectives()
         {
             return objectives;
         }
 
-        public bool HasObjective(string objectiveToCheck)
+        public bool HasObjective(string objectiveRef)
         {
-            foreach(string objective in objectives)
+            foreach(Objective objective in objectives)
             {
-                if (objective == objectiveToCheck)
+                if (objective.reference == objectiveRef)
                     return true;
             }
             return false;

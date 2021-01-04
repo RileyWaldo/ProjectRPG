@@ -8,7 +8,6 @@ namespace RPG.UI.Questing
     {
         [SerializeField] QuestItemUI questPrefab = null;
         [SerializeField] QuestInfoUI questInfo = null;
-        [SerializeField] QuestObjectiveContainerUI questObjectiveContainerUI = null;
 
         QuestTracker questTracker;
 
@@ -21,6 +20,8 @@ namespace RPG.UI.Questing
 
         private void UpdateUI()
         {
+            questInfo.UpdateUI();
+
             foreach (Transform child in transform)
             {
                 Destroy(child.gameObject);
@@ -30,7 +31,7 @@ namespace RPG.UI.Questing
             {
                 QuestItemUI questItem = Instantiate(questPrefab, transform);
                 questItem.SetUp(status);
-                questItem.GetComponent<Button>().onClick.AddListener(() => questObjectiveContainerUI.SetUp(status, questInfo));
+                questItem.GetComponent<Button>().onClick.AddListener(() => questInfo.ShowInfo(status));
             }
         }
     }
