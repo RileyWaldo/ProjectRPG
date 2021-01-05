@@ -18,6 +18,8 @@ MonoBehaviour:
   voiceAudio: {fileID: 0}
   onEnterAction: 
   onExitAction: 
+  condition:
+    and: []
   children:
   - c0ca2c96-e81d-4509-9879-962e37058382
   rect:
@@ -44,6 +46,8 @@ MonoBehaviour:
   voiceAudio: {fileID: 8300000, guid: 653b5d2e8dcbb09458751d2a9f3febe9, type: 3}
   onEnterAction: 
   onExitAction: 
+  condition:
+    and: []
   children:
   - 982c9f2f-313d-44e8-9fa2-fcbb68a246c1
   - 1a132994-dd64-4c4f-b7f4-4bfeccd81202
@@ -70,6 +74,8 @@ MonoBehaviour:
   voiceAudio: {fileID: 8300000, guid: 19a7297aea16afa4d8a67eaa6abb9cc1, type: 3}
   onEnterAction: 
   onExitAction: 
+  condition:
+    and: []
   children: []
   rect:
     serializedVersion: 2
@@ -95,6 +101,8 @@ MonoBehaviour:
   voiceAudio: {fileID: 0}
   onEnterAction: 
   onExitAction: 
+  condition:
+    and: []
   children:
   - 46f1a65e-2c4c-499c-8d38-e34bb6b250c0
   rect:
@@ -120,6 +128,8 @@ MonoBehaviour:
   voiceAudio: {fileID: 0}
   onEnterAction: 
   onExitAction: 
+  condition:
+    and: []
   children:
   - ef7fd202-52d9-40a5-b98f-b5b535d94e6c
   rect:
@@ -170,6 +180,8 @@ MonoBehaviour:
   voiceAudio: {fileID: 0}
   onEnterAction: 
   onExitAction: Quest
+  condition:
+    and: []
   children: []
   rect:
     serializedVersion: 2
@@ -195,6 +207,8 @@ MonoBehaviour:
   voiceAudio: {fileID: 8300000, guid: b1d82e916d29729468050788c5420c88, type: 3}
   onEnterAction: 
   onExitAction: 
+  condition:
+    and: []
   children:
   - 3c048ca5-f171-4f14-ac73-79a2f0fd4b38
   rect:
@@ -220,6 +234,8 @@ MonoBehaviour:
   voiceAudio: {fileID: 0}
   onEnterAction: 
   onExitAction: 
+  condition:
+    and: []
   children: []
   rect:
     serializedVersion: 2
@@ -245,6 +261,8 @@ MonoBehaviour:
   voiceAudio: {fileID: 8300000, guid: c45575f14d8cd784eab3916578f20713, type: 3}
   onEnterAction: 
   onExitAction: 
+  condition:
+    and: []
   children:
   - 91293c9b-00c2-438c-9c14-73952c2b83ba
   rect:
@@ -270,6 +288,8 @@ MonoBehaviour:
   voiceAudio: {fileID: 8300000, guid: b06e671942de72b41a9fb336dbbc48d0, type: 3}
   onEnterAction: 
   onExitAction: 
+  condition:
+    and: []
   children:
   - 22d1dbbd-9382-442f-9da9-118d949b75f2
   - cb51f6c4-dd54-4802-a1a0-95061798f1ea
@@ -296,6 +316,8 @@ MonoBehaviour:
   voiceAudio: {fileID: 0}
   onEnterAction: 
   onExitAction: 
+  condition:
+    and: []
   children:
   - 68c1fd8d-354b-4c34-a39a-8bf8f2693375
   rect:

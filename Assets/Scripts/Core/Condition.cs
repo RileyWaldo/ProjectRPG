@@ -6,23 +6,60 @@ namespace RPG.Core
     [System.Serializable]
     public class Condition
     {
-        [SerializeField] string predicate = "";
-        [SerializeField] string[] parameters = default;
+        [SerializeField] Disjunction[] and = default;
 
         public bool Check(IEnumerable<IPredicateEvaluator> evaluators)
         {
-            foreach(var evaluator in evaluators)
+            foreach(Disjunction disjunction in and)
             {
-                bool? result = evaluator.Evaluate(predicate, parameters);
-                if(result == null)
+                if(!disjunction.Check(evaluators))
                 {
-                    continue;
-                }
-
-                if (result == false)
                     return false;
+                }
             }
             return true;
+        }
+
+        [System.Serializable]
+        class Disjunction
+        {
+            [SerializeField] Predicate[] or = default;
+
+            public bool Check(IEnumerable<IPredicateEvaluator> evaluators)
+            {
+                foreach(Predicate pred in or)
+                {
+                    if(pred.Check(evaluators))
+                    {
+                        return true;
+                    }
+                }
+                return false;
+            }
+        }
+
+        [System.Serializable]
+        class Predicate
+        {
+            [SerializeField] bool not = false;
+            [SerializeField] PredicateType predicate = PredicateType.None;
+            [SerializeField] string[] parameters = default;
+
+            public bool Check(IEnumerable<IPredicateEvaluator> evaluators)
+            {
+                foreach (var evaluator in evaluators)
+                {
+                    bool? result = evaluator.Evaluate(predicate, parameters);
+                    if (result == null)
+                    {
+                        continue;
+                    }
+
+                    if (result == not)
+                        return false;
+                }
+                return true;
+            }
         }
     }
 }

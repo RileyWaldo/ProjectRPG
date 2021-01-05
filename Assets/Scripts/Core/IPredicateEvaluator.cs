@@ -2,6 +2,6 @@
 {
     public interface IPredicateEvaluator
     {
-        bool? Evaluate(string predicate, string[] parameters);
+        bool? Evaluate(PredicateType predicate, string[] parameters);
     }
 }

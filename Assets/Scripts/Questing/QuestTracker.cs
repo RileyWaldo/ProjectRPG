@@ -84,14 +84,18 @@ namespace RPG.Questing
             //TODO: give rewards!!
         }
 
-        public bool? Evaluate(string predicate, string[] parameters)
+        public bool? Evaluate(PredicateType predicate, string[] parameters)
         {
-            if(predicate != "HasQuest")
+            switch(predicate)
             {
-                return null;
+                case PredicateType.HasQuest:
+                    return HasQuest(Quest.GetByName(parameters[0]));
+
+                case PredicateType.CompletedQuest:
+                    return GetQuestStatus(Quest.GetByName(parameters[0])).IsComplete();
             }
 
-            return HasQuest(Quest.GetByName(parameters[0]));
+            return null;
         }
     }
 }
