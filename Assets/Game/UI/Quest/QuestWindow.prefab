@@ -823,7 +823,6 @@ GameObject:
   - component: {fileID: 4511186382290317969}
   - component: {fileID: 4188221193695382041}
   - component: {fileID: 5850472453325048783}
-  - component: {fileID: 4065660571909672390}
   m_Layer: 5
   m_Name: QuestWindow
   m_TagString: Untagged
@@ -917,23 +916,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &4065660571909672390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4650203430293319324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6784f3d748307c7418403b5832886206, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toggleKey: 113
-  uiContainer: {fileID: 4650203430293319324}
-  onToggle:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &4732962399549070672
 GameObject:
   m_ObjectHideFlags: 0
