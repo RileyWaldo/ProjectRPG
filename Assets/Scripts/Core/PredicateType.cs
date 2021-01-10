@@ -4,6 +4,10 @@
     {
         None,
         HasQuest,
-        CompletedQuest
+        CompletedQuest,
+        CompletedObjective,
+        HasItem,
+        HasRespectGreaterThan,
+        HasRespectLessThan
     }
 }

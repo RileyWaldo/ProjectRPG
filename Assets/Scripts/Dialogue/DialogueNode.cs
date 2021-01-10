@@ -21,7 +21,7 @@ namespace RPG.Dialogue
         [SerializeField] AudioClip voiceAudio = default;
         [SerializeField] string onEnterAction = "";
         [SerializeField] string onExitAction = "";
-        [SerializeField] Condition condition = default;
+        [SerializeField] Condition condition = null;
         [SerializeField] List<string> children = new List<string>();
         [SerializeField] Rect rect = new Rect(0, 0, 200, 100);
 
@@ -109,6 +109,11 @@ namespace RPG.Dialogue
             Undo.RecordObject(this, "Removed Dialogue Link");
             children.Remove(childID);
             EditorUtility.SetDirty(this);
+        }
+
+        public bool HasConditions()
+        {
+            return condition.HasConditions();
         }
 #endif
     }

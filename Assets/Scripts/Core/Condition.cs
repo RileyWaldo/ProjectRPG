@@ -61,5 +61,14 @@ namespace RPG.Core
                 return true;
             }
         }
+
+#if UNITY_EDITOR
+
+        public bool HasConditions()
+        {
+            return and != null && and.Length > 0;
+        }
+
+#endif
     }
 }

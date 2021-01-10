@@ -1090,6 +1090,110 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 420235842}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &422936489
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2256610095832508239, guid: a6e045f4f94d2ec479dcccf8782c58ab,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.011426508
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256610095832508239, guid: a6e045f4f94d2ec479dcccf8782c58ab,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.015257001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256610095832508239, guid: a6e045f4f94d2ec479dcccf8782c58ab,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.015667332
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256610095832508239, guid: a6e045f4f94d2ec479dcccf8782c58ab,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9996956
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256610095832508239, guid: a6e045f4f94d2ec479dcccf8782c58ab,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -1.282
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256610095832508239, guid: a6e045f4f94d2ec479dcccf8782c58ab,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -1.769
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256610095832508239, guid: a6e045f4f94d2ec479dcccf8782c58ab,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 1.816
+      objectReference: {fileID: 0}
+    - target: {fileID: 2706796788242205237, guid: a6e045f4f94d2ec479dcccf8782c58ab,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 139.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 2706796788242205237, guid: a6e045f4f94d2ec479dcccf8782c58ab,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.118737
+      objectReference: {fileID: 0}
+    - target: {fileID: 2706796788242205237, guid: a6e045f4f94d2ec479dcccf8782c58ab,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 62.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 2706796788242205237, guid: a6e045f4f94d2ec479dcccf8782c58ab,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2706796788242205237, guid: a6e045f4f94d2ec479dcccf8782c58ab,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7501102
+      objectReference: {fileID: 0}
+    - target: {fileID: 2706796788242205237, guid: a6e045f4f94d2ec479dcccf8782c58ab,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2706796788242205237, guid: a6e045f4f94d2ec479dcccf8782c58ab,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6613129
+      objectReference: {fileID: 0}
+    - target: {fileID: 2706796788242205237, guid: a6e045f4f94d2ec479dcccf8782c58ab,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2706796788242205237, guid: a6e045f4f94d2ec479dcccf8782c58ab,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2706796788242205237, guid: a6e045f4f94d2ec479dcccf8782c58ab,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 97.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2706796788242205237, guid: a6e045f4f94d2ec479dcccf8782c58ab,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5030179316930553728, guid: a6e045f4f94d2ec479dcccf8782c58ab,
+        type: 3}
+      propertyPath: m_Name
+      value: Frodo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a6e045f4f94d2ec479dcccf8782c58ab, type: 3}
 --- !u!4 &425180666 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4241630982343140, guid: 67ad500920d899f4a8b4ac0b7cab9eee,
@@ -2698,7 +2802,7 @@ Transform:
   - {fileID: 2028290406}
   - {fileID: 1304131981}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1030369447
 PrefabInstance:
@@ -4215,7 +4319,7 @@ PrefabInstance:
     - target: {fileID: 2674216897218953082, guid: 23759c5401f4bb143b566a355ddce685,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000002861023
+      value: 0.0008136182
       objectReference: {fileID: 0}
     - target: {fileID: 2674216897218953082, guid: 23759c5401f4bb143b566a355ddce685,
         type: 3}
@@ -4410,7 +4514,7 @@ PrefabInstance:
     - target: {fileID: 2969712351227721862, guid: 23759c5401f4bb143b566a355ddce685,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -0.00030215364
       objectReference: {fileID: 0}
     - target: {fileID: 3212561772319763795, guid: 23759c5401f4bb143b566a355ddce685,
         type: 3}
@@ -5885,17 +5989,17 @@ PrefabInstance:
     - target: {fileID: 7901458097804735596, guid: 23759c5401f4bb143b566a355ddce685,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 163.16168
+      value: 163.16814
       objectReference: {fileID: 0}
     - target: {fileID: 7901458097804735596, guid: 23759c5401f4bb143b566a355ddce685,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.3426948
+      value: -2.3426945
       objectReference: {fileID: 0}
     - target: {fileID: 7901458097804735596, guid: 23759c5401f4bb143b566a355ddce685,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.247915
+      value: 10.254175
       objectReference: {fileID: 0}
     - target: {fileID: 7901458097804735596, guid: 23759c5401f4bb143b566a355ddce685,
         type: 3}
@@ -5955,17 +6059,17 @@ PrefabInstance:
     - target: {fileID: 7901458097943818605, guid: 23759c5401f4bb143b566a355ddce685,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 163.16168
+      value: 163.16814
       objectReference: {fileID: 0}
     - target: {fileID: 7901458097943818605, guid: 23759c5401f4bb143b566a355ddce685,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.3426948
+      value: -2.3426945
       objectReference: {fileID: 0}
     - target: {fileID: 7901458097943818605, guid: 23759c5401f4bb143b566a355ddce685,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.247915
+      value: 10.254175
       objectReference: {fileID: 0}
     - target: {fileID: 7901458097943818605, guid: 23759c5401f4bb143b566a355ddce685,
         type: 3}
@@ -7731,7 +7835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 683393578efa83841943c993a7d4877c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: deac94fbfec2cbb4fb569eebb688fd47, type: 2}
+  dialogue: {fileID: 0}
   NPCNames:
   - Bartender
 --- !u!114 &1574742085
@@ -7743,46 +7847,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1574742083}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 327aafa5cbd3bd044b2039d48481aca2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  quest: {fileID: 11400000, guid: 60aacd3f1b9c3ed4eaeabf8c98094149, type: 2}
---- !u!4 &1574742092 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8547168992439199808, guid: d7fb37c192eac3044a8073883bade4a3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1747740475}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1574742093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1574742083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6cbd61b0b0d52894488f273e77e9ca0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  action: Quest
+  action: QuestGet
   onTrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1574742084}
-        m_TargetAssemblyTypeName: RPG.Dialogue.AIConversant, Assembly-CSharp
-        m_MethodName: SetNewDialogue
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: d6279708d26efff48b6dfb2bfa1a5eb9,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: RPG.Dialogue.Dialogue, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1574742085}
+      - m_Target: {fileID: 1574742086}
         m_TargetAssemblyTypeName: RPG.Questing.QuestGiver, Assembly-CSharp
         m_MethodName: GiveQuest
         m_Mode: 1
@@ -7794,7 +7866,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1574742095
+--- !u!114 &1574742086
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7803,26 +7875,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1574742083}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cbd61b0b0d52894488f273e77e9ca0a, type: 3}
+  m_Script: {fileID: 11500000, guid: 327aafa5cbd3bd044b2039d48481aca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  action: PostQuest
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1574742084}
-        m_TargetAssemblyTypeName: RPG.Dialogue.AIConversant, Assembly-CSharp
-        m_MethodName: SetNewDialogue
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 4f1f4e071a3e39d42a4dcd6b42072986,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: RPG.Dialogue.Dialogue, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  quest: {fileID: 11400000, guid: 3744770dd10e6f448af06b0dcaf27047, type: 2}
+--- !u!4 &1574742092 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8547168992439199808, guid: d7fb37c192eac3044a8073883bade4a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1747740475}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1609899578
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7983,7 +8045,7 @@ Transform:
   - {fileID: 900135437}
   - {fileID: 710807728}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1634659184
 PrefabInstance:
@@ -8064,6 +8126,152 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 692dec6c13485704e83c9da3517ddd3e, type: 3}
+--- !u!1 &1637489184 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5030179316930553728, guid: a6e045f4f94d2ec479dcccf8782c58ab,
+    type: 3}
+  m_PrefabInstance: {fileID: 422936489}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1637489185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637489184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cbd61b0b0d52894488f273e77e9ca0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: GiveQuest
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1637489187}
+        m_TargetAssemblyTypeName: RPG.Questing.QuestGiver, Assembly-CSharp
+        m_MethodName: GiveQuest
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1637489186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637489184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 683393578efa83841943c993a7d4877c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 11400000, guid: dff332c010dfb6a47b3cfbdc5e9d4c66, type: 2}
+  NPCNames:
+  - Frodo
+--- !u!114 &1637489187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637489184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 327aafa5cbd3bd044b2039d48481aca2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 11400000, guid: d718568ee75e0d940af3a41c0f5391a1, type: 2}
+--- !u!114 &1637489196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637489184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cbd61b0b0d52894488f273e77e9ca0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: GiveWood
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1637489197}
+        m_TargetAssemblyTypeName: RPG.Questing.QuestCompletion, Assembly-CSharp
+        m_MethodName: CompleteObjective
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1637489197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637489184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 201922f9fad29d94eb1d971f8b859869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 11400000, guid: d718568ee75e0d940af3a41c0f5391a1, type: 2}
+  objective: a
+--- !u!114 &1637489198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637489184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cbd61b0b0d52894488f273e77e9ca0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: GetRespect
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1637489199}
+        m_TargetAssemblyTypeName: RPG.Stats.RespectGiver, Assembly-CSharp
+        m_MethodName: GiveRespect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1637489199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637489184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9adc501555893ec46ae77cb28d1f1195, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faction: Barbarians
+  respectValue: 10
 --- !u!1001 &1639082937
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9496,7 +9704,7 @@ Transform:
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1848305710 stripped
 Transform:
@@ -9549,7 +9757,7 @@ PrefabInstance:
     - target: {fileID: 53923032592534266, guid: cd70d261cca900c458683df5cb164a46,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 53923032592534266, guid: cd70d261cca900c458683df5cb164a46,
         type: 3}
@@ -10355,8 +10563,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 201922f9fad29d94eb1d971f8b859869, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quest: {fileID: 11400000, guid: 60aacd3f1b9c3ed4eaeabf8c98094149, type: 2}
-  objective: Goal1
+  quest: {fileID: 11400000, guid: 3744770dd10e6f448af06b0dcaf27047, type: 2}
+  objective: 1
 --- !u!1001 &2033972478
 PrefabInstance:
   m_ObjectHideFlags: 0

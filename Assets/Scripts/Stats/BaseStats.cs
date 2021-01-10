@@ -6,7 +6,6 @@ namespace RPG.Stats
     {
         [Range(1, 99)]
         [SerializeField] int combatLevel = 1;
-        [SerializeField] int respect = 0;
         [SerializeField] CharacterClass characterClass = default;
         [SerializeField] Progression progression = default;
         [SerializeField] GameObject levelUpVFX = default;
@@ -62,11 +61,6 @@ namespace RPG.Stats
         public int GetCombatLevel()
         {
             return combatLevel;
-        }
-
-        public int GetRespectLevel()
-        {
-            return respect;
         }
     }
 }

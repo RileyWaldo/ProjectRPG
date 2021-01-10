@@ -177,6 +177,10 @@ namespace RPG.Dialogue.Editor
             }
 
             GUILayout.EndHorizontal();
+            string labelText = "";
+            if (node.HasConditions())
+                labelText = "Conditional Node";
+            GUILayout.Label(labelText);
 
             GUILayout.EndArea();
         }

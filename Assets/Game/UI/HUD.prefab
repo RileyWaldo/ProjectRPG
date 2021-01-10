@@ -185,7 +185,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2911803719989282140}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: RPG.UI.ShowHideUI, Assembly-CSharp
         m_MethodName: Toggle
         m_Mode: 1
@@ -2239,18 +2239,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1154309850711427226}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2911803719989282140 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4065660571909672390, guid: 1189369e4ad8484468b8dc47946afd7d,
-    type: 3}
-  m_PrefabInstance: {fileID: 1154309850711427226}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5804077586624292358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6784f3d748307c7418403b5832886206, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5091885140887062600 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6246189489740988626, guid: 1189369e4ad8484468b8dc47946afd7d,
@@ -2739,6 +2727,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319900207149624251, guid: 0618f3a7574263b46bd9f39a26dfea98,
+        type: 3}
+      propertyPath: m_Value
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7642220193793743252, guid: 0618f3a7574263b46bd9f39a26dfea98,
         type: 3}

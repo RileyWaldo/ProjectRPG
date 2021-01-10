@@ -25,6 +25,9 @@ namespace RPG.Questing
         public void CompleteObjective(Quest quest, string objective)
         {
             QuestStatus status = GetQuestStatus(quest);
+            if (status.IsObjectiveComplete(objective))
+                return;
+
             status.CompleteObjective(objective);
 
             if(status.IsComplete())
@@ -93,6 +96,9 @@ namespace RPG.Questing
 
                 case PredicateType.CompletedQuest:
                     return GetQuestStatus(Quest.GetByName(parameters[0])).IsComplete();
+
+                case PredicateType.CompletedObjective:
+                    return GetQuestStatus(Quest.GetByName(parameters[0])).IsObjectiveComplete(parameters[1]);
             }
 
             return null;

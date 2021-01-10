@@ -1,0 +1,283 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7931093798174649562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: cf14c439-4c4a-4eba-986d-ad98fb0354f1
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Cut cut
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - not: 0
+        predicate: 5
+        parameters:
+        - Barbarians
+        - 10
+  children:
+  - 5c677527-e60f-49ac-9ca7-5ab65fbd5392
+  rect:
+    serializedVersion: 2
+    x: 352
+    y: 549
+    width: 200
+    height: 100
+--- !u!114 &-5956592127659899912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 5c677527-e60f-49ac-9ca7-5ab65fbd5392
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: Here wood leelle
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: GiveWood
+  condition:
+    and: []
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 646
+    y: 586
+    width: 200
+    height: 100
+--- !u!114 &-5783586099146133765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 9cf996f9-1aac-4939-b2f9-374e934b4707
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: Hello Friend!
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+  children:
+  - 836b148f-9493-4ce9-b2d3-676cb0bdea15
+  - cf14c439-4c4a-4eba-986d-ad98fb0354f1
+  - 2377990e-643e-4be7-93fc-1c0871cb3ad1
+  - 10344df4-4fc6-4545-8aae-546183a7a8cb
+  rect:
+    serializedVersion: 2
+    x: 37
+    y: 313
+    width: 200
+    height: 100
+--- !u!114 &-3165437163483393636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 836b148f-9493-4ce9-b2d3-676cb0bdea15
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Go to hell
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+  children:
+  - 54f7a3bc-2f65-4779-91c3-472708136138
+  rect:
+    serializedVersion: 2
+    x: 344
+    y: 68
+    width: 200
+    height: 100
+--- !u!114 &-2268225980969230466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 1d9f4613-636a-4506-91f4-615a8c78d608
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: I say yaes.
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: GiveQuest
+  condition:
+    and: []
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 629
+    y: 258
+    width: 200
+    height: 100
+--- !u!114 &-1849393801334758707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 2377990e-643e-4be7-93fc-1c0871cb3ad1
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Do you have work?
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - not: 1
+        predicate: 1
+        parameters:
+        - SkullQuest
+  children:
+  - 1d9f4613-636a-4506-91f4-615a8c78d608
+  rect:
+    serializedVersion: 2
+    x: 350
+    y: 226
+    width: 200
+    height: 100
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851c35a65dc9ee540a1b9ab9cdf45cad, type: 3}
+  m_Name: FrodoDialogue
+  m_EditorClassIdentifier: 
+  newNodeOffSet: {x: 250, y: 25}
+  nodes:
+  - {fileID: -5783586099146133765}
+  - {fileID: -3165437163483393636}
+  - {fileID: 7192417945784141581}
+  - {fileID: -1849393801334758707}
+  - {fileID: -2268225980969230466}
+  - {fileID: 8734044758251630672}
+  - {fileID: 2983380667618425540}
+  - {fileID: -7931093798174649562}
+  - {fileID: -5956592127659899912}
+--- !u!114 &2983380667618425540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 6bfbe3aa-2df2-4058-8562-714b5c375b74
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: Skull stuff, duh
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 673
+    y: 430
+    width: 200
+    height: 100
+--- !u!114 &7192417945784141581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 54f7a3bc-2f65-4779-91c3-472708136138
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: fuck
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 661
+    y: 89
+    width: 200
+    height: 100
+--- !u!114 &8734044758251630672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 10344df4-4fc6-4545-8aae-546183a7a8cb
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: What did you want again?
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - not: 0
+        predicate: 1
+        parameters:
+        - SkullQuest
+  children:
+  - 6bfbe3aa-2df2-4058-8562-714b5c375b74
+  rect:
+    serializedVersion: 2
+    x: 347
+    y: 394
+    width: 200
+    height: 100
