@@ -34,6 +34,11 @@ namespace RPG.Questing
 
         public bool IsObjectiveComplete(string objective)
         {
+            if(!quest.HasObjective(objective))
+            {
+                Debug.Log("IsObjectiveComplete in Quest: " + quest.GetTitle() + " doesn't have objective: " + objective);
+                return false;
+            }
             foreach(string objectiveToCheck in completedObjectives)
             {
                 if (objective == objectiveToCheck)
@@ -46,7 +51,10 @@ namespace RPG.Questing
         {
             if(quest.HasObjective(objective))
             {
-                completedObjectives.Add(objective);
+                if (!completedObjectives.Contains(objective))
+                    completedObjectives.Add(objective);
+                else
+                    Debug.Log("Already completed objective: " + objective + "in Quest: " + quest.GetTitle());
             }
             else
             {

@@ -9,8 +9,11 @@ namespace RPG.Questing
 
         public void CompleteObjective()
         {
-            QuestTracker questTracker = GameObject.FindGameObjectWithTag("Player").GetComponent<QuestTracker>();
-            questTracker.CompleteObjective(quest, objective);
+            if(quest != null)
+            {
+                QuestTracker questTracker = GameObject.FindGameObjectWithTag("Player").GetComponent<QuestTracker>();
+                questTracker.CompleteObjective(quest, objective);
+            }
         }
     }
 }

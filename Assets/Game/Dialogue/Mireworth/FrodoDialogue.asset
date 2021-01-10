@@ -20,17 +20,22 @@ MonoBehaviour:
   condition:
     and:
     - or:
-      - not: 0
-        predicate: 5
+      - not: 1
+        predicate: 3
         parameters:
-        - Barbarians
-        - 10
+        - fucker
+        - a
+    - or:
+      - not: 0
+        predicate: 1
+        parameters:
+        - fucker
   children:
   - 5c677527-e60f-49ac-9ca7-5ab65fbd5392
   rect:
     serializedVersion: 2
     x: 352
-    y: 549
+    y: 570
     width: 200
     height: 100
 --- !u!114 &-5956592127659899912
@@ -55,8 +60,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 646
-    y: 586
+    x: 647
+    y: 604
     width: 200
     height: 100
 --- !u!114 &-5783586099146133765
@@ -85,8 +90,8 @@ MonoBehaviour:
   - 10344df4-4fc6-4545-8aae-546183a7a8cb
   rect:
     serializedVersion: 2
-    x: 37
-    y: 313
+    x: 34
+    y: 339
     width: 200
     height: 100
 --- !u!114 &-3165437163483393636
@@ -112,8 +117,8 @@ MonoBehaviour:
   - 54f7a3bc-2f65-4779-91c3-472708136138
   rect:
     serializedVersion: 2
-    x: 344
-    y: 68
+    x: 351
+    y: 74
     width: 200
     height: 100
 --- !u!114 &-2268225980969230466
@@ -138,8 +143,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 629
-    y: 258
+    x: 637
+    y: 265
     width: 200
     height: 100
 --- !u!114 &-1849393801334758707
@@ -219,8 +224,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 673
-    y: 430
+    x: 656
+    y: 428
     width: 200
     height: 100
 --- !u!114 &7192417945784141581
@@ -245,8 +250,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 661
-    y: 89
+    x: 678
+    y: 81
     width: 200
     height: 100
 --- !u!114 &8734044758251630672

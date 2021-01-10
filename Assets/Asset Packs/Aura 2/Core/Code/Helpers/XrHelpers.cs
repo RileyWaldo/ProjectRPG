@@ -37,7 +37,7 @@ namespace Aura2API
             {
                 return UnityEngine.XR.XRSettings.enabled &&
 #if UNITY_EDITOR
-                Application.isPlaying && PlayerSettings.virtualRealitySupported && PlayerSettings.stereoRenderingPath == StereoRenderingPath.SinglePass;
+                Application.isPlaying && PlayerSettings.stereoRenderingPath == StereoRenderingPath.SinglePass;
 #else
                 UnityEngine.XR.XRSettings.eyeTextureDesc.vrUsage == VRTextureUsage.TwoEyes;
 #endif

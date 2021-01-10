@@ -25,7 +25,8 @@ namespace RPG.Questing
         public void CompleteObjective(Quest quest, string objective)
         {
             QuestStatus status = GetQuestStatus(quest);
-            if (status.IsObjectiveComplete(objective))
+
+            if (status == null || status.IsObjectiveComplete(objective))
                 return;
 
             status.CompleteObjective(objective);
@@ -89,16 +90,25 @@ namespace RPG.Questing
 
         public bool? Evaluate(PredicateType predicate, string[] parameters)
         {
-            switch(predicate)
+            QuestStatus status;
+            switch (predicate)
             {
                 case PredicateType.HasQuest:
                     return HasQuest(Quest.GetByName(parameters[0]));
 
                 case PredicateType.CompletedQuest:
-                    return GetQuestStatus(Quest.GetByName(parameters[0])).IsComplete();
+                    status = GetQuestStatus(Quest.GetByName(parameters[0]));
+                    if (status != null)
+                        return status.IsComplete();
+                    Debug.Log("Predicate.CompleteQuest Cannot Find Quest: " + parameters[0]);
+                    return null;
 
                 case PredicateType.CompletedObjective:
-                    return GetQuestStatus(Quest.GetByName(parameters[0])).IsObjectiveComplete(parameters[1]);
+                    status = GetQuestStatus(Quest.GetByName(parameters[0]));
+                    if(status != null)
+                        return status.IsObjectiveComplete(parameters[1]);
+                    Debug.Log("Predicate.CompletedObjective Make sure to check for HasQuest first: " + parameters[0]);
+                    return null;
             }
 
             return null;

@@ -594,7 +594,7 @@ PrefabInstance:
         type: 3}
       propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1574742084}
+      objectReference: {fileID: 0}
     - target: {fileID: 5030994355204730337, guid: 692dec6c13485704e83c9da3517ddd3e,
         type: 3}
       propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -1056,7 +1056,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1747645384}
     m_Modifications:
     - target: {fileID: 2256610095832508239, guid: a6e045f4f94d2ec479dcccf8782c58ab,
         type: 3}
@@ -1131,7 +1131,7 @@ PrefabInstance:
     - target: {fileID: 2706796788242205237, guid: a6e045f4f94d2ec479dcccf8782c58ab,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2706796788242205237, guid: a6e045f4f94d2ec479dcccf8782c58ab,
         type: 3}
@@ -1153,6 +1153,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Frodo
       objectReference: {fileID: 0}
+    - target: {fileID: 6740147723672742063, guid: a6e045f4f94d2ec479dcccf8782c58ab,
+        type: 3}
+      propertyPath: NPCNames.Array.data[0]
+      value: Frodo
+      objectReference: {fileID: 0}
+    - target: {fileID: 6740147723672742063, guid: a6e045f4f94d2ec479dcccf8782c58ab,
+        type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: dff332c010dfb6a47b3cfbdc5e9d4c66,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6e045f4f94d2ec479dcccf8782c58ab, type: 3}
 --- !u!4 &425180666 stripped
@@ -1344,6 +1355,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 444657153}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &457858489
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 457858490}
+  m_Layer: 0
+  m_Name: Enemies
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &457858490
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457858489}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.52777576, y: -20.33144, z: 106.51872}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1012837827}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &466291751 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010708501322, guid: 7a8a5bb6f2e71b143aff5818ec77dbcd,
@@ -2359,7 +2401,6 @@ Transform:
   - {fileID: 1474439279}
   - {fileID: 2069661344}
   - {fileID: 425180666}
-  - {fileID: 1574742092}
   - {fileID: 1385701661}
   m_Father: {fileID: 1626906536}
   m_RootOrder: 4
@@ -2713,14 +2754,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1012837825}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.52777576, y: 20.33144, z: -106.51872}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2028290406}
   - {fileID: 1304131981}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 457858490}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1030369447
 PrefabInstance:
@@ -3018,7 +3059,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4764298106409884, guid: b32c7959973c2cc489a5a0fcec92c87a, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 4764298106409884, guid: b32c7959973c2cc489a5a0fcec92c87a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3413,6 +3454,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 228878404184363322, guid: 23759c5401f4bb143b566a355ddce685,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 256386812222091640, guid: 23759c5401f4bb143b566a355ddce685,
         type: 3}
@@ -4218,6 +4264,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.000039577484
+      objectReference: {fileID: 0}
+    - target: {fileID: 3212561772319763795, guid: 23759c5401f4bb143b566a355ddce685,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3214673655623566078, guid: 23759c5401f4bb143b566a355ddce685,
         type: 3}
@@ -6982,21 +7033,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1747740475}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1574742084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1574742083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 683393578efa83841943c993a7d4877c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
-  NPCNames:
-  - Bartender
 --- !u!114 &1574742085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7319,21 +7355,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1637489186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1637489184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 683393578efa83841943c993a7d4877c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: dff332c010dfb6a47b3cfbdc5e9d4c66, type: 2}
-  NPCNames:
-  - Frodo
 --- !u!114 &1637489187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7347,6 +7368,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quest: {fileID: 11400000, guid: d718568ee75e0d940af3a41c0f5391a1, type: 2}
+--- !u!4 &1637489195 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2706796788242205237, guid: a6e045f4f94d2ec479dcccf8782c58ab,
+    type: 3}
+  m_PrefabInstance: {fileID: 422936489}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1637489196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7847,13 +7874,56 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2099264016}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1747645383
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1747645384}
+  m_Layer: 0
+  m_Name: NPCs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1747645384
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747645383}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1637489195}
+  - {fileID: 1574742092}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1747740475
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 900135437}
+    m_TransformParent: {fileID: 1747645384}
     m_Modifications:
+    - target: {fileID: 1045975424361941722, guid: d7fb37c192eac3044a8073883bade4a3,
+        type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: deac94fbfec2cbb4fb569eebb688fd47,
+        type: 2}
+    - target: {fileID: 1045975424361941722, guid: d7fb37c192eac3044a8073883bade4a3,
+        type: 3}
+      propertyPath: NPCNames.Array.data[0]
+      value: Bartender
+      objectReference: {fileID: 0}
     - target: {fileID: 1640177571031385589, guid: d7fb37c192eac3044a8073883bade4a3,
         type: 3}
       propertyPath: m_Name
@@ -7897,7 +7967,7 @@ PrefabInstance:
     - target: {fileID: 8547168992439199808, guid: d7fb37c192eac3044a8073883bade4a3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8547168992439199808, guid: d7fb37c192eac3044a8073883bade4a3,
         type: 3}
@@ -8863,7 +8933,7 @@ Transform:
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1848305710 stripped
 Transform:
@@ -8916,7 +8986,7 @@ PrefabInstance:
     - target: {fileID: 53923032592534266, guid: cd70d261cca900c458683df5cb164a46,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 53923032592534266, guid: cd70d261cca900c458683df5cb164a46,
         type: 3}
