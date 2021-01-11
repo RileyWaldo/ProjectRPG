@@ -36,13 +36,14 @@ namespace RPG.Stats
 
         public void RestoreState(object state)
         {
-            factions.Clear();
             List<Faction> newState = state as List<Faction>;
 
             if (newState == null)
                 return;
 
-            foreach(Faction faction in newState)
+            factions.Clear();
+
+            foreach (Faction faction in newState)
             {
                 factions.Add(faction);
             }

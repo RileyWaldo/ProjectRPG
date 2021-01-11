@@ -1,12 +1,25 @@
 ﻿using UnityEngine;
 
-namespace RPG.Inventory
+namespace RPG.Inventorys
 {
     [System.Serializable]
     public class InventorySlot
     {
-        [SerializeField] InventoryItem item = default;
+        [SerializeField] InventoryItem item = null;
         [SerializeField] int amount = 0;
+
+        public InventorySlot(InventoryItem item, int amount)
+        {
+            Item = item;
+            Amount = amount;
+        }
+
+        public InventorySlot(object restoreState)
+        {
+            InventorySlotRecord recover = restoreState as InventorySlotRecord;
+            item = InventoryItem.GetFromID(recover.itemID);
+            amount = recover.amount;
+        }
 
         public void SetItem(InventorySlot item)
         {
@@ -24,6 +37,22 @@ namespace RPG.Inventory
         {
             get { return amount; }
             set { amount = value; }
+        }
+
+        public object CaptureState()
+        {
+            InventorySlotRecord record = new InventorySlotRecord();
+            if (item != null)
+                record.itemID = item.ItemID;
+            record.amount = amount;
+            return record;
+        }
+
+        [System.Serializable]
+        class InventorySlotRecord
+        {
+            public string itemID = "";
+            public int amount = 0;
         }
     }
 }

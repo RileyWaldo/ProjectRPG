@@ -20,16 +20,16 @@ MonoBehaviour:
   condition:
     and:
     - or:
-      - not: 1
-        predicate: 3
-        parameters:
-        - fucker
-        - a
-    - or:
       - not: 0
         predicate: 1
         parameters:
-        - fucker
+        - SkullQuest
+    - or:
+      - not: 1
+        predicate: 3
+        parameters:
+        - SkullQuest
+        - a
   children:
   - 5c677527-e60f-49ac-9ca7-5ab65fbd5392
   rect:
@@ -88,10 +88,11 @@ MonoBehaviour:
   - cf14c439-4c4a-4eba-986d-ad98fb0354f1
   - 2377990e-643e-4be7-93fc-1c0871cb3ad1
   - 10344df4-4fc6-4545-8aae-546183a7a8cb
+  - 48dce7c3-3cf8-44f6-bf7f-512b718b1bbe
   rect:
     serializedVersion: 2
-    x: 34
-    y: 339
+    x: 31
+    y: 338
     width: 200
     height: 100
 --- !u!114 &-3165437163483393636
@@ -202,6 +203,8 @@ MonoBehaviour:
   - {fileID: 2983380667618425540}
   - {fileID: -7931093798174649562}
   - {fileID: -5956592127659899912}
+  - {fileID: 3828447713259758608}
+  - {fileID: 4997658150334151590}
 --- !u!114 &2983380667618425540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,6 +229,64 @@ MonoBehaviour:
     serializedVersion: 2
     x: 656
     y: 428
+    width: 200
+    height: 100
+--- !u!114 &3828447713259758608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 48dce7c3-3cf8-44f6-bf7f-512b718b1bbe
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Want this shield?
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - not: 0
+        predicate: 4
+        parameters:
+        - 7ac553d3-2b47-4453-a13e-2af83738c19f
+  children:
+  - 89a84ce1-257c-4be4-ace8-9f3a4de05c4b
+  rect:
+    serializedVersion: 2
+    x: 375
+    y: 720
+    width: 200
+    height: 100
+--- !u!114 &4997658150334151590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 89a84ce1-257c-4be4-ace8-9f3a4de05c4b
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: Sweet! thanks dood!
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: GiveItem
+  condition:
+    and: []
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 655
+    y: 757
     width: 200
     height: 100
 --- !u!114 &7192417945784141581
