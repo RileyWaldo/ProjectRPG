@@ -1,0 +1,355 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6387715376223743809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 4f2e743c-02fd-4217-b2e0-856597ade495
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: None of your business, goblin scum! (Fight)
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: Attack
+  condition:
+    and: []
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 387
+    y: 93
+    width: 200
+    height: 100
+--- !u!114 &-4276210887831018307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 7fa994fa-0435-45ba-a159-77c13986697e
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Let's settle this like men!
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: Attack
+  condition:
+    and: []
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 886
+    y: 38
+    width: 200
+    height: 100
+--- !u!114 &-3637533986472197363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: cb6f0eb2-1e7a-4269-877b-aa19955b3884
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: Correct. You clearly have some knowledge of this land after all. You may
+    pass to see the oracle.
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1672
+    y: 472
+    width: 200
+    height: 100
+--- !u!114 &-3626584220771762074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 2a6646a9-e0e9-484e-ac06-7cbc75d54aa6
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: I'll take the riddle!
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+  children:
+  - 913eb9d8-bfa9-4a47-8929-13d21137eea6
+  rect:
+    serializedVersion: 2
+    x: 886
+    y: 271
+    width: 200
+    height: 100
+--- !u!114 &-2897719989441124099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 0d733f3b-38b1-461e-92b5-609c02340ef5
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: 6th Era
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+  children:
+  - f341ac1f-1887-4519-9986-104278495e14
+  rect:
+    serializedVersion: 2
+    x: 1401
+    y: 222
+    width: 200
+    height: 100
+--- !u!114 &-2031512254007158543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 913eb9d8-bfa9-4a47-8929-13d21137eea6
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: In what era was the Kilbor family successful in overthrowing Aurumlux from
+    it's ancestral natives, the Barbarian clan?
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+  children:
+  - 219b24de-7a75-4cd1-9451-f28e4d6887ed
+  - 0d733f3b-38b1-461e-92b5-609c02340ef5
+  - f8d815b8-eb72-44f0-97c1-ef516f3d233d
+  rect:
+    serializedVersion: 2
+    x: 1148
+    y: 308
+    width: 200
+    height: 100
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851c35a65dc9ee540a1b9ab9cdf45cad, type: 3}
+  m_Name: Brulak
+  m_EditorClassIdentifier: 
+  newNodeOffSet: {x: 250, y: 25}
+  nodes:
+  - {fileID: 1850049859560711370}
+  - {fileID: 5486796483621454174}
+  - {fileID: 5315540376614790844}
+  - {fileID: -3626584220771762074}
+  - {fileID: -4276210887831018307}
+  - {fileID: -2031512254007158543}
+  - {fileID: 6119694457476669158}
+  - {fileID: -2897719989441124099}
+  - {fileID: 2284097301431009112}
+  - {fileID: 8926591399649716249}
+  - {fileID: -3637533986472197363}
+  - {fileID: -6387715376223743809}
+--- !u!114 &1850049859560711370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: c7710624-a409-4f97-a2b6-d325a3f51d65
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: STOP! Who stands before the gatekeeper of this dungeon?
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+  children:
+  - 759073fe-4a36-470e-b2c1-b29be174d7c7
+  - 4f2e743c-02fd-4217-b2e0-856597ade495
+  rect:
+    serializedVersion: 2
+    x: 152
+    y: 227
+    width: 200
+    height: 100
+--- !u!114 &2284097301431009112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: f8d815b8-eb72-44f0-97c1-ef516f3d233d
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: 4th Era
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+  children:
+  - cb6f0eb2-1e7a-4269-877b-aa19955b3884
+  rect:
+    serializedVersion: 2
+    x: 1410
+    y: 447
+    width: 200
+    height: 100
+--- !u!114 &5315540376614790844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 75052968-1692-4beb-a3e4-a721956da1cb
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: The Oracle you seek can be found within this temple... But you must first
+    answer a riddle or fight me to the death!
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+  children:
+  - 2a6646a9-e0e9-484e-ac06-7cbc75d54aa6
+  - 7fa994fa-0435-45ba-a159-77c13986697e
+  rect:
+    serializedVersion: 2
+    x: 636
+    y: 149
+    width: 200
+    height: 100
+--- !u!114 &5486796483621454174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 759073fe-4a36-470e-b2c1-b29be174d7c7
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: I am Ulvor, not of this land... I seek the knowledge of the Oracle!
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+  children:
+  - 75052968-1692-4beb-a3e4-a721956da1cb
+  rect:
+    serializedVersion: 2
+    x: 402
+    y: 252
+    width: 200
+    height: 100
+--- !u!114 &6119694457476669158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: 219b24de-7a75-4cd1-9451-f28e4d6887ed
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: 2nd Era
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1398
+    y: 333
+    width: 200
+    height: 100
+--- !u!114 &8926591399649716249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0326129d8b710cf47929a664a53bea72, type: 3}
+  m_Name: f341ac1f-1887-4519-9986-104278495e14
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: You are incorrect. You must now leave.
+  voiceAudio: {fileID: 0}
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+  children:
+  - 219b24de-7a75-4cd1-9451-f28e4d6887ed
+  rect:
+    serializedVersion: 2
+    x: 1689
+    y: 261
+    width: 200
+    height: 100
