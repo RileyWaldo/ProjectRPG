@@ -78,7 +78,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speaker: 1
   text: Hello Friend!
-  voiceAudio: {fileID: 0}
+  voiceAudio: {fileID: 8300000, guid: ad015f7799044ba4cbd8945cb1f6965a, type: 3}
   onEnterAction: 
   onExitAction: 
   condition:
@@ -255,6 +255,7 @@ MonoBehaviour:
         predicate: 4
         parameters:
         - 7ac553d3-2b47-4453-a13e-2af83738c19f
+        - 2
   children:
   - 89a84ce1-257c-4be4-ace8-9f3a4de05c4b
   rect:

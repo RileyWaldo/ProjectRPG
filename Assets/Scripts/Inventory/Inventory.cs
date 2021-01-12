@@ -22,6 +22,10 @@ namespace RPG.Inventorys
         {
             var item = InventoryItem.GetFromID("7ac553d3-2b47-4453-a13e-2af83738c19f");
             AddItem(item, 1);
+            AddItem(item, 1);
+            AddItem(item, 1);
+            AddItem(InventoryItem.GetFromID("404dbaaa-8785-4704-9096-aa5b0cd2f44a"), 15);
+            RemoveItem(InventoryItem.GetFromID("404dbaaa-8785-4704-9096-aa5b0cd2f44a"), 1);
         }
 
         public int GetSlotCount()
@@ -38,23 +42,52 @@ namespace RPG.Inventorys
 
         public bool AddItem(InventoryItem itemToAdd, int amount)
         {
+            int maxStack = itemToAdd.MaxStack;
             if (!itemToAdd.IsStackable)
-                amount = 1;
-            var item = new InventorySlot(itemToAdd, amount);
+            {
+                maxStack = 1;
+            }
+
+            List<InventorySlot> slotsToAdd = new List<InventorySlot>();
+            
             bool canAdd = false;
             foreach(InventorySlot slot in inventorySlots)
             {
                 if(slot.Item == null)
                 {
+                    if (amount > maxStack)
+                    {
+                        amount -= maxStack;
+                        slotsToAdd.Add(slot);
+                        continue;
+                    }
+
                     canAdd = true;
-                    slot.SetItem(item);
+                    slot.Item = itemToAdd;
+                    slot.Amount = amount;
                     break;
                 }
-                if(slot.Item == item.Item && slot.Item.IsStackable && slot.Amount + item.Amount <= slot.Item.MaxStack)
+                if(slot.Item == itemToAdd && slot.Item.IsStackable)
                 {
+                    if(slot.Amount + amount > maxStack)
+                    {
+                        amount -= maxStack - slot.Amount;
+                        slotsToAdd.Add(slot);
+                        continue;
+                    }
+
                     canAdd = true;
-                    slot.Amount += item.Amount;
+                    slot.Amount += amount;
                     break;
+                }
+            }
+
+            if(canAdd)
+            {
+                foreach(InventorySlot slot in slotsToAdd)
+                {
+                    slot.Item = itemToAdd;
+                    slot.Amount = maxStack;
                 }
             }
 
@@ -64,9 +97,6 @@ namespace RPG.Inventorys
 
         public bool RemoveItem(InventoryItem itemToRemove, int amount)
         {
-            if (!itemToRemove.IsStackable)
-                amount = 1;
-
             List<InventorySlot> slotToRemove = new List<InventorySlot>();
 
             bool canRemove = false;
@@ -105,12 +135,36 @@ namespace RPG.Inventorys
             return canRemove;
         }
 
+        public InventorySlot SwitchItemInSlot(InventorySlot item, int slot)
+        {
+            InventorySlot itemToReturn = inventorySlots[slot];
+            inventorySlots[slot] = item;
+            return itemToReturn;
+        }
+
         public bool HasItem(InventoryItem item)
         {
             foreach(InventorySlot slot in inventorySlots)
             {
                 if (slot.Item == item)
                     return true;
+            }
+            return false;
+        }
+
+        public bool HasItem(InventoryItem item, int amount)
+        {
+            int count = 0;
+            foreach(InventorySlot slot in inventorySlots)
+            {
+                if(slot.Item == item)
+                {
+                    count += slot.Amount;
+                    if (count < amount)
+                        continue;
+                    else
+                        return true;
+                }
             }
             return false;
         }
@@ -144,7 +198,11 @@ namespace RPG.Inventorys
             switch(predicate)
             {
                 case PredicateType.HasItem:
-                    return HasItem(InventoryItem.GetFromID(parameters[0]));
+                    int amount = 1;
+                    if (parameters.Length > 1)
+                        amount = int.Parse(parameters[1]);
+
+                    return HasItem(InventoryItem.GetFromID(parameters[0]), amount);
             }
             return null;
         }
