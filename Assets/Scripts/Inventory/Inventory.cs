@@ -22,13 +22,9 @@ namespace RPG.Inventorys
         {
             var item = InventoryItem.GetFromID("7ac553d3-2b47-4453-a13e-2af83738c19f");
             AddItem(item, 1);
-            AddItem(item, 1);
-            AddItem(item, 1);
-            AddItem(InventoryItem.GetFromID("404dbaaa-8785-4704-9096-aa5b0cd2f44a"), 15);
-            RemoveItem(InventoryItem.GetFromID("404dbaaa-8785-4704-9096-aa5b0cd2f44a"), 1);
         }
 
-        public int GetSlotCount()
+        public int GetSize()
         {
             return inventorySlots.Count;
         }
@@ -95,6 +91,51 @@ namespace RPG.Inventorys
             return canAdd;
         }
 
+        public int ForceAddItem(InventoryItem itemToAdd, int amount)
+        {
+            int maxStack = itemToAdd.MaxStack;
+            if (!itemToAdd.IsStackable)
+            {
+                maxStack = 1;
+            }
+
+            foreach (InventorySlot slot in inventorySlots)
+            {
+                if (slot.Item == null)
+                {
+                    if (amount > maxStack)
+                    {
+                        slot.Item = itemToAdd;
+                        slot.Amount = maxStack;
+                        amount -= maxStack;
+                        continue;
+                    }
+
+                    slot.Item = itemToAdd;
+                    slot.Amount = amount;
+                    amount = 0;
+                    break;
+                }
+                if (slot.Item == itemToAdd && slot.Item.IsStackable)
+                {
+                    if (slot.Amount + amount > maxStack)
+                    {
+                        amount -= maxStack - slot.Amount;
+                        slot.Amount = maxStack;
+                        continue;
+                    }
+
+                    slot.Amount += amount;
+                    amount = 0;
+                    break;
+                }
+            }
+
+            onUpdateInventory?.Invoke();
+
+            return amount;
+        }
+
         public bool RemoveItem(InventoryItem itemToRemove, int amount)
         {
             List<InventorySlot> slotToRemove = new List<InventorySlot>();
@@ -132,6 +173,44 @@ namespace RPG.Inventorys
             }
 
             onUpdateInventory?.Invoke();
+            return canRemove;
+        }
+
+        public bool AddItemToSlot(int index, InventoryItem item, int amount)
+        {
+            bool canAdd = false;
+
+            InventorySlot slot = GetItemByIndex(index);
+
+            if (slot.Item == item && item.IsStackable && slot.Amount + amount < item.MaxStack)
+            {
+                slot.Amount += amount;
+                canAdd = true;
+            }
+            if (slot.Item == null && amount <= item.MaxStack)
+            {
+                slot.Item = item;
+                slot.Amount = amount;
+                canAdd = true;
+            }
+
+            return canAdd;
+        }
+
+        public bool RemoveItemFromSlot(int index, Inventory item, int amount)
+        {
+            bool canRemove = false;
+
+            InventorySlot slot = GetItemByIndex(index);
+
+            if(slot.Item == item && slot.Amount >= amount)
+            {
+                slot.Amount -= amount;
+                if (slot.Amount <= 0)
+                    slot.Item = null;
+                canRemove = true;
+            }
+
             return canRemove;
         }
 

@@ -27,7 +27,7 @@ namespace RPG.UI.Inventorys
                 Destroy(child.gameObject);
             }
 
-            for(int i=0; i<inventory.GetSlotCount(); i++)
+            for(int i=0; i<inventory.GetSize(); i++)
             {
                 GameObject newSlot = Instantiate(inventorySlotPrefab, transform);
                 newSlot.GetComponent<InventorySlotUI>().SetUp(inventory, i);
