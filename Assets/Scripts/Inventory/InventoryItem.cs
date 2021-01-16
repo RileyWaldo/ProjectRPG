@@ -3,8 +3,7 @@ using UnityEngine;
 
 namespace RPG.Inventorys
 {
-    [CreateAssetMenu(fileName = "InventoryItem", menuName = "RPG/Inventory/Create New Item")]
-    public class InventoryItem : ScriptableObject, ISerializationCallbackReceiver
+    public abstract class InventoryItem : ScriptableObject, ISerializationCallbackReceiver
     {
         [SerializeField] string itemID = "";
         [SerializeField] Sprite icon = default;

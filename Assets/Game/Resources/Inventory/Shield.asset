@@ -15,7 +15,7 @@ MonoBehaviour:
   itemID: 7ac553d3-2b47-4453-a13e-2af83738c19f
   icon: {fileID: 21300000, guid: 3c830820830a5f947b015bac86147eff, type: 3}
   itemName: Shield
-  itemDescription: 
-  value: 0
+  itemDescription: You can block with this!
+  value: 5
   isStackable: 0
   maxStack: 1

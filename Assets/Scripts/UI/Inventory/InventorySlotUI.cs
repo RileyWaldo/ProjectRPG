@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 using RPG.Inventorys;
 
 namespace RPG.UI.Inventorys
@@ -7,6 +8,7 @@ namespace RPG.UI.Inventorys
     public class InventorySlotUI : MonoBehaviour
     {
         [SerializeField] Image icon = null;
+        [SerializeField] TextMeshProUGUI textAmount = null;
 
         Inventory inventory;
         int index;
@@ -24,8 +26,14 @@ namespace RPG.UI.Inventorys
             if (item == null || item.Item == null)
                 icon.gameObject.SetActive(false);
             else
+            {
                 icon.sprite = item.Item.Icon;
-
+                if(item.Amount > 1)
+                {
+                    textAmount.enabled = true;
+                    textAmount.text = item.Amount.ToString();
+                }
+            }
         }
     }
 }
