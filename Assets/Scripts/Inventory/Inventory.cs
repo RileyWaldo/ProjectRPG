@@ -248,7 +248,7 @@ namespace RPG.Inventorys
             return false;
         }
 
-        public object CaptureState()
+        object ISaveable.CaptureState()
         {
             List<object> state = new List<object>();
             foreach(InventorySlot slot in inventorySlots)
@@ -258,7 +258,7 @@ namespace RPG.Inventorys
             return state;
         }
 
-        public void RestoreState(object state)
+        void ISaveable.RestoreState(object state)
         {
             List<object> stateList = state as List<object>;
             if (stateList == null)
