@@ -20,7 +20,7 @@ namespace RPG.Inventorys
 
         private void Awake()
         {
-            var item = InventoryItem.GetFromID("7ac553d3-2b47-4453-a13e-2af83738c19f");
+            var item = InventoryItem.GetFromID("bc61a55c-7b34-4016-9482-037a2809aba5");
             AddItem(item, 1);
         }
 

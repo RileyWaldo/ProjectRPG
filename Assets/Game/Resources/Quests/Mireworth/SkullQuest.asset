@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 379076bc02dcd514d8ad1fc2e6958507, type: 3}
   m_Name: SkullQuest
   m_EditorClassIdentifier: 
+  isMainQuest: 1
   objectives:
   - reference: a
     description: Chop down a tree

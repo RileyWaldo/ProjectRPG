@@ -119,7 +119,7 @@ namespace RPG.Control
             return true;
         }
 
-        private static Ray GetMouseRay()
+        private Ray GetMouseRay()
         {
             return Camera.main.ScreenPointToRay(Input.mousePosition);
         }

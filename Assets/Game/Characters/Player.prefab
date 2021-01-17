@@ -184,6 +184,18 @@ MonoBehaviour:
     respect: 0
   - faction: Labourists
     respect: 0
+--- !u!114 &4195766336190044345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3751958103522869505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40e5c4076e9fc0947bd7ca04e551de1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &5080259772630353399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,6 +210,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxNavMeshProjectionDistance: 1
   raycastRadius: 0.5
+--- !u!114 &5713604799984890035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3751958103522869505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b54905c1356c452489fbc907655fefc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &7552420951768480972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,30 +245,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26050a57c50e96e439e8eb0d525b1274, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &4195766336190044345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3751958103522869505}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40e5c4076e9fc0947bd7ca04e551de1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &5713604799984890035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3751958103522869505}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b54905c1356c452489fbc907655fefc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &565599908181553216
@@ -446,6 +446,21 @@ PrefabInstance:
       propertyPath: rightHandTransform
       value: 
       objectReference: {fileID: 565599908181145970}
+    - target: {fileID: 1331943151203516744, guid: 1495c0e2eb60f694badda7100b0f243f,
+        type: 3}
+      propertyPath: m_AgentTypeID
+      value: -1372625422
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331943151203516744, guid: 1495c0e2eb60f694badda7100b0f243f,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331943151203516744, guid: 1495c0e2eb60f694badda7100b0f243f,
+        type: 3}
+      propertyPath: m_ObstacleAvoidanceType
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3298265940001897803, guid: 1495c0e2eb60f694badda7100b0f243f,
         type: 3}
       propertyPath: m_RootOrder
@@ -471,6 +486,11 @@ PrefabInstance:
       propertyPath: maxSpeed
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 4100985584344855305, guid: 1495c0e2eb60f694badda7100b0f243f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5276116288126876009, guid: 1495c0e2eb60f694badda7100b0f243f,
         type: 3}
       propertyPath: m_Enabled
@@ -494,12 +514,12 @@ PrefabInstance:
     - target: {fileID: 8107345676390070275, guid: 1495c0e2eb60f694badda7100b0f243f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8290969356655161359, guid: 1495c0e2eb60f694badda7100b0f243f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1495c0e2eb60f694badda7100b0f243f, type: 3}

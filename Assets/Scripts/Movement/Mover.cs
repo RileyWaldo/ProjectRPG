@@ -18,6 +18,12 @@ namespace RPG.Movement
         {
             agent = GetComponent<NavMeshAgent>();
             health = GetComponent<Health>();
+
+            NavMeshHit targetPoint;
+            if(NavMesh.SamplePosition(transform.position, out targetPoint, maxNavMeshPathLength, 1))
+            {
+                transform.position = targetPoint.position;
+            }
         }
 
         void Update()

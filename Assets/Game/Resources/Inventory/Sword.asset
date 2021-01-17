@@ -9,13 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0792200cc691866479bf5d2e1a88cff1, type: 3}
+  m_Script: {fileID: 11500000, guid: 09089bb275cc0c04cac481192022e599, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
-  itemID: 404dbaaa-8785-4704-9096-aa5b0cd2f44a
-  icon: {fileID: 21300000, guid: e91fc63fcd9bb1c4abf7ffdc0848a328, type: 3}
-  itemName: Sword
-  itemDescription: It's sharp as hell!
-  value: 10
+  itemID: bc61a55c-7b34-4016-9482-037a2809aba5
+  icon: {fileID: 21300000, guid: 57e32a0902cc7e64b9fdef7ff8699607, type: 3}
+  itemName: Sword Of Hell
+  itemDescription: Go to hell
+  value: 100
   isStackable: 1
-  maxStack: 10
+  maxStack: 12
+  allowedEquipLocation: 7
