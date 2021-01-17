@@ -400,7 +400,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 5592198893172740350}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 0.3
   m_Speed: 5.662317
   m_Acceleration: 20
   avoidancePriority: 50
@@ -409,10 +409,10 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 2
+  m_Height: 1.8
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 3
 --- !u!95 &5276116288126876009
 Animator:
   serializedVersion: 3
@@ -487,7 +487,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   combatLevel: 1
-  respect: 0
   characterClass: 0
   progression: {fileID: 11400000, guid: bc04fa805598dbd4b8ae6ff48f1dd1f0, type: 2}
   levelUpVFX: {fileID: 1055585006069982, guid: c7f93a0255162fd47bbe40874f339bf4, type: 3}
