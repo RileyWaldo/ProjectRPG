@@ -448,18 +448,8 @@ PrefabInstance:
       objectReference: {fileID: 565599908181145970}
     - target: {fileID: 1331943151203516744, guid: 1495c0e2eb60f694badda7100b0f243f,
         type: 3}
-      propertyPath: m_AgentTypeID
-      value: -1372625422
-      objectReference: {fileID: 0}
-    - target: {fileID: 1331943151203516744, guid: 1495c0e2eb60f694badda7100b0f243f,
-        type: 3}
       propertyPath: m_Radius
       value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1331943151203516744, guid: 1495c0e2eb60f694badda7100b0f243f,
-        type: 3}
-      propertyPath: m_ObstacleAvoidanceType
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3298265940001897803, guid: 1495c0e2eb60f694badda7100b0f243f,
         type: 3}
@@ -489,7 +479,7 @@ PrefabInstance:
     - target: {fileID: 4100985584344855305, guid: 1495c0e2eb60f694badda7100b0f243f,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5276116288126876009, guid: 1495c0e2eb60f694badda7100b0f243f,
         type: 3}
