@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace RPG.Inventorys
+namespace RPG.Inventories
 {
     [System.Serializable]
     public class InventorySlot

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
-using RPG.Inventorys;
+using RPG.Inventories;
 
-namespace RPG.UI.Inventorys
+namespace RPG.UI.Inventories
 {
     public class InventoryUI : MonoBehaviour
     {

@@ -7,6 +7,7 @@ namespace RPG.UI.Questing
     public class QuestInfoUI : MonoBehaviour
     {
         [SerializeField] TextMeshProUGUI titleText = default;
+        [SerializeField] TextMeshProUGUI completeText = default;
         [SerializeField] QuestObjectiveContainerUI questObjectiveContainer = default;
         [SerializeField] QuestRewardContainerUI questRewardContainer = default;
 
@@ -37,6 +38,7 @@ namespace RPG.UI.Questing
             titleText.text = questStatus.GetQuest().GetTitle();
             questObjectiveContainer.SetUp(questStatus);
             questRewardContainer.SetUp(questStatus);
+            completeText.gameObject.SetActive(questStatus.IsComplete());
         }
     }
 }

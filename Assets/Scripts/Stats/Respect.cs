@@ -25,7 +25,7 @@ namespace RPG.Stats
                 if (faction.faction == factionType)
                     return faction.respect;
             }
-            Debug.Log("Couldn't find faction resect level.");
+            Debug.Log("Couldn't find faction respect level.");
             return 0;
         }
 

@@ -84,8 +84,10 @@ namespace RPG.Questing
 
         private void GiveReward(Quest quest)
         {
-            Debug.Log("Quest Complete: heres your real fake rewards!");
-            //TODO: give rewards!!
+            foreach(Reward reward in quest.GetRewards())
+            {
+                reward.GiveReward();
+            }
         }
 
         public bool? Evaluate(PredicateType predicate, string[] parameters)

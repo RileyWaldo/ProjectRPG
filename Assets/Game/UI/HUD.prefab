@@ -210,6 +210,7 @@ GameObject:
   - component: {fileID: 8478737969961479620}
   - component: {fileID: 2144014579648592683}
   - component: {fileID: 1478124010035724728}
+  - component: {fileID: 141584312629805697}
   m_Layer: 5
   m_Name: HUD
   m_TagString: HUD
@@ -318,6 +319,18 @@ MonoBehaviour:
   questInfoWindow: {fileID: 8862303460550732058}
   inventoryHotKey: 105
   questHotKey: 113
+--- !u!225 &141584312629805697
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9134526624505444931}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1001 &1116058995383350572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -746,6 +759,36 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 233631743509774069, guid: 1189369e4ad8484468b8dc47946afd7d,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 338413892132726245, guid: 1189369e4ad8484468b8dc47946afd7d,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 338413892132726245, guid: 1189369e4ad8484468b8dc47946afd7d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 338413892132726245, guid: 1189369e4ad8484468b8dc47946afd7d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 338413892132726245, guid: 1189369e4ad8484468b8dc47946afd7d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 338413892132726245, guid: 1189369e4ad8484468b8dc47946afd7d,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 338413892132726245, guid: 1189369e4ad8484468b8dc47946afd7d,
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
@@ -2451,6 +2494,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573815288131797307, guid: 0618f3a7574263b46bd9f39a26dfea98,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4781312821716223147, guid: 0618f3a7574263b46bd9f39a26dfea98,
         type: 3}

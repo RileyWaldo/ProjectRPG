@@ -16,7 +16,8 @@ MonoBehaviour:
   objectives:
   - reference: a
     description: Chop down a tree
-  - reference: b
-    description: Light a fire
-  - reference: c
-    description: Get the skull!
+  rewards:
+  - item: {fileID: 11400000, guid: ab30d5b4a38d1e749b9ba693fb11bc69, type: 2}
+    amount: 100
+    faction: Labourists
+    respect: 10

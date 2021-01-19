@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using RPG.Saving;
 
-namespace RPG.Inventorys
+namespace RPG.Inventories
 {
     public class ActionStore : MonoBehaviour, ISaveable
     {

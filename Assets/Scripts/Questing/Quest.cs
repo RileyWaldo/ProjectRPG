@@ -8,6 +8,7 @@ namespace RPG.Questing
     {
         [SerializeField] bool isMainQuest = true;
         [SerializeField] Objective[] objectives = default;
+        [SerializeField] Reward[] rewards = default;
 
         static Dictionary<string, Quest> questLookUpCache;
 
@@ -59,6 +60,11 @@ namespace RPG.Questing
         public IEnumerable<Objective> GetObjectives()
         {
             return objectives;
+        }
+
+        public IEnumerable<Reward> GetRewards()
+        {
+            return rewards;
         }
 
         public bool HasObjective(string objectiveRef)

@@ -13,6 +13,24 @@ namespace RPG.UI.Questing
             {
                 Destroy(child.gameObject);
             }
+
+            foreach(Reward reward in status.GetQuest().GetRewards())
+            {
+                if (reward.item == null)
+                    continue;
+
+                GameObject newReward = Instantiate(rewardPrefab, transform);
+                newReward.GetComponent<QuestRewardUI>().SetUp(reward.item.Name, reward.amount.ToString());
+            }
+
+            foreach (Reward reward in status.GetQuest().GetRewards())
+            {
+                if (string.IsNullOrWhiteSpace(reward.faction))
+                    continue;
+
+                GameObject newReward = Instantiate(rewardPrefab, transform);
+                newReward.GetComponent<QuestRewardUI>().SetUp(reward.faction, reward.respect.ToString() + " Respect");
+            }
         }
     }
 }

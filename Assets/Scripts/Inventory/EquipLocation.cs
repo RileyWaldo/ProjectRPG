@@ -1,4 +1,4 @@
-﻿namespace RPG.Inventorys
+﻿namespace RPG.Inventories
 {
     public enum EquipLocation
     {

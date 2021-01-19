@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using RPG.Inventorys;
+using RPG.Inventories;
 
-namespace RPG.UI.Inventorys
+namespace RPG.UI.Inventories
 {
     public class InventorySlotUI : MonoBehaviour
     {

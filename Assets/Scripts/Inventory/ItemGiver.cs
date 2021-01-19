@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace RPG.Inventorys
+namespace RPG.Inventories
 {
     public class ItemGiver : MonoBehaviour
     {

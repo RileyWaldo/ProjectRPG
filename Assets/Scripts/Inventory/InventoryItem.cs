@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace RPG.Inventorys
+namespace RPG.Inventories
 {
     public abstract class InventoryItem : ScriptableObject, ISerializationCallbackReceiver
     {

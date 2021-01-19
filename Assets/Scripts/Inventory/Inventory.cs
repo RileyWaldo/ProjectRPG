@@ -4,7 +4,7 @@ using UnityEngine;
 using RPG.Core;
 using RPG.Saving;
 
-namespace RPG.Inventorys
+namespace RPG.Inventories
 {
     public class Inventory : MonoBehaviour, ISaveable, IPredicateEvaluator
     {
@@ -20,8 +20,8 @@ namespace RPG.Inventorys
 
         private void Awake()
         {
-            var item = InventoryItem.GetFromID("bc61a55c-7b34-4016-9482-037a2809aba5");
-            AddItem(item, 1);
+            var item = InventoryItem.GetFromID("Lux");
+            AddItem(item, 154);
         }
 
         public int GetSize()
