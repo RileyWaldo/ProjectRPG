@@ -188,7 +188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding:
     m_Left: 0
-    m_Right: 0
+    m_Right: 20
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
@@ -214,8 +214,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: {fileID: 5627312244411750705}
   progress: {fileID: 8564450884236853725}
-  questInfoUIPrefab: {fileID: 5654414584852561702, guid: 95b5ec47770dad84a824e2491252bdf8,
-    type: 3}
 --- !u!114 &3550689766092523916
 MonoBehaviour:
   m_ObjectHideFlags: 0

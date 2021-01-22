@@ -6,44 +6,27 @@ namespace RPG.UI
     public class HUDController : MonoBehaviour
     {
         [Header("Windows")]
-        [SerializeField] GameObject inventoryWindow = null;
-        [SerializeField] GameObject questWindow = null;
-        [SerializeField] GameObject questInfoWindow = null;
+        [SerializeField] GameObject menuyWindow = null;
 
         [Header("Key Bindings")]
-        [SerializeField] KeyCode inventoryHotKey = KeyCode.I;
-        [SerializeField] KeyCode questHotKey = KeyCode.Q;
+        [SerializeField] KeyCode menuHotKey = KeyCode.I;
 
         private void Start()
         {
-            inventoryWindow.SetActive(false);
-            questInfoWindow.GetComponent<QuestInfoUI>().ShowVisible(false);
-            questWindow.SetActive(false);
+            menuyWindow.SetActive(false);
         }
 
         private void Update()
         {
-            if (Input.GetKeyDown(inventoryHotKey))
+            if (Input.GetKeyDown(menuHotKey))
             {
                 ToggleInventory();
-            }
-
-            if (Input.GetKeyDown(questHotKey))
-            {
-                ToggleQuest();
             }
         }
 
         public void ToggleInventory()
         {
-            inventoryWindow.SetActive(!inventoryWindow.activeSelf);
+            menuyWindow.SetActive(!menuyWindow.activeSelf);
         }
-
-        public void ToggleQuest()
-        {
-            questWindow.SetActive(!questWindow.activeSelf);
-            questInfoWindow.GetComponent<QuestInfoUI>().ShowVisible(false);
-        }
-
     }
 }
